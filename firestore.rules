@@ -1,0 +1,60 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128;
+    }
+
+    // 1. GLOBAL SAFETY NET: Default deny all unspecified collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // 2. USERS: User profile storage
+    match /users/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isOwner(userId);
+      allow delete: if false;
+    }
+
+    // 3. HACKATHONS: Public contests discovery & coordinator creation
+    match /hackathons/{hackathonId} {
+      allow read: if true;
+      allow create: if true;
+      allow update: if true;
+      allow delete: if isSignedIn();
+    }
+
+    // 4. TEAMS: Hacker teams registration and directory
+    match /teams/{teamId} {
+      allow read: if true;
+      allow create: if true;
+      allow update: if true;
+      allow delete: if isSignedIn();
+    }
+
+    // 5. SCORES: Live judge scoring rubric chamber & live student scoreboard
+    match /scores/{scoreId} {
+      allow read: if true;
+      allow create: if true;
+      allow update: if true;
+      allow delete: if isSignedIn();
+    }
+
+    // Connection test document
+    match /test/connection {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

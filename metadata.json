@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Mango Operations OS",
+  "description": "Dual-interface command engine for hackathon coordinators and judges with real-time rubric consensus, automated pipelines, and telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Authenticated user profile and role details",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "email": { "type": "string", "format": "email", "maxLength": 256 },
+        "displayName": { "type": "string", "maxLength": 128 },
+        "photoURL": { "type": "string", "maxLength": 512 },
+        "role": { "type": "string", "enum": ["coordinator", "judge", "student"], "maxLength": 32 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email"]
+    },
+    "Hackathon": {
+      "title": "Hackathon",
+      "description": "Hackathon event configuration and access passcodes",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 180 },
+        "tagline": { "type": "string", "maxLength": 400 },
+        "prizePool": { "type": "string", "maxLength": 64 },
+        "location": { "type": "string", "maxLength": 200 },
+        "status": { "type": "string", "enum": ["LIVE", "UPCOMING", "COMPLETED"], "maxLength": 32 },
+        "track": { "type": "string", "maxLength": 128 },
+        "organizerEmail": { "type": "string", "format": "email", "maxLength": 256 },
+        "createdAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "title"]
+    },
+    "Team": {
+      "title": "Team",
+      "description": "Registered hackathon team and member details",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "hackathonId": { "type": "string", "maxLength": 128 },
+        "teamName": { "type": "string", "maxLength": 128 },
+        "leaderName": { "type": "string", "maxLength": 128 },
+        "leaderEmail": { "type": "string", "maxLength": 256 },
+        "leaderPhone": { "type": "string", "maxLength": 64 },
+        "totalMembers": { "type": "number" },
+        "track": { "type": "string", "maxLength": 128 },
+        "notes": { "type": "string", "maxLength": 300 },
+        "pptStatus": { "type": "string", "enum": ["submitted", "not_submitted"], "maxLength": 32 },
+        "assignedPanel": { "type": "string", "maxLength": 128 },
+        "createdAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "teamName", "leaderName"]
+    },
+    "Score": {
+      "title": "Score",
+      "description": "Judge evaluation rubric score and feedback for a team",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "hackathonId": { "type": "string", "maxLength": 128 },
+        "teamId": { "type": "string", "maxLength": 128 },
+        "teamName": { "type": "string", "maxLength": 128 },
+        "judgeName": { "type": "string", "maxLength": 128 },
+        "judgeEmail": { "type": "string", "format": "email", "maxLength": 256 },
+        "technical": { "type": "number" },
+        "innovation": { "type": "number" },
+        "presentation": { "type": "number" },
+        "feasibility": { "type": "number" },
+        "totalScore": { "type": "number" },
+        "feedback": { "type": "string", "maxLength": 1500 },
+        "verdict": { "type": "string", "enum": ["Recommend Finalist", "Strong Contender", "Needs Revision"], "maxLength": 64 },
+        "submittedAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "teamId", "judgeName", "totalScore"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "User" },
+      "description": "Authenticated user profiles with identity and role info"
+    },
+    "/hackathons/{hackathonId}": {
+      "schema": { "$ref": "Hackathon" },
+      "description": "Contests created by coordinators, publicly visible to builders and judges"
+    },
+    "/teams/{teamId}": {
+      "schema": { "$ref": "Team" },
+      "description": "Teams enrolled in contests with presentation status and track allocation"
+    },
+    "/scores/{scoreId}": {
+      "schema": { "$ref": "Score" },
+      "description": "Evaluations entered by judges in the evaluation chamber and streamed live to teams"
+    }
+  }
+}

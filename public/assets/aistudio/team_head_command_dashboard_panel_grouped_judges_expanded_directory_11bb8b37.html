@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Command Center — Global AI 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "lumen-cream": "#ffffeb",
+            "background": "#fcf9f8",
+            "surface": "#ffffff",
+            "lumen-stone": "#e4e4d0",
+            "primary": "#6a5778",
+            "primary-container": "#f0d7ff",
+            "on-primary-container": "#4a3559",
+            "secondary": "#29685f",
+            "secondary-container": "#afefe2",
+            "on-secondary-container": "#144840",
+            "tertiary": "#8a5100",
+            "tertiary-container": "#ffd9b6",
+            "on-tertiary-container": "#633600",
+            "charcoal": "#1c1b1b",
+            "on-surface": "#1c1b1b",
+            "on-surface-variant": "#5a555c",
+            "fog": "#878680",
+            "outline-soft": "#e4e4d0"
+          },
+          fontFamily: {
+            "serif": ["EB Garamond", "serif"],
+            "sans": ["Figtree", "sans-serif"]
+          },
+          borderRadius: {
+            "xl": "1.25rem",
+            "2xl": "1.5rem",
+            "3xl": "2rem"
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #fcf9f8;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #e4e4d0;
+        border-radius: 9999px;
+      }
+    }
+  </style>
+</head>
+<body class="font-sans text-on-surface antialiased bg-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TOP HEADER -->
+<header class="sticky top-0 z-40 bg-surface/90 backdrop-blur-md border-b border-lumen-stone px-6 lg:px-10 h-20 flex items-center justify-between transition-all">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-3">
+<div class="relative w-11 h-11 rounded-2xl bg-lumen-cream border border-lumen-stone overflow-hidden p-0.5 flex items-center justify-center shadow-sm">
+<img alt="Mascot Co-pilot" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZOcs5DUmombeuOGsoxqh8VSfRDikLG9XxXoGT9LJazZoomml38OJqya8f0KrWvwIFXqOU5rmaONRngFYnLnvVL1MaPF7mDmnYoiQpp038ULDrkFg1_7A0zmMnObvN0NaJMSSKLS1gL876UDe05y3ypb-_G7C-pvVyZX2MyNju08UYlqh3a5y_3hR7Luqoq2ws4BuXTcMNsARO7bHWXinpjbHjy-smagYg8CBcyQHq6k2ZFMNJP_vpklpcgwY90VB4LmQ"/>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h1 class="font-serif text-2xl font-medium tracking-tight text-charcoal">Global AI 2026</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container/70 border border-secondary/20 text-secondary text-xs font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              LIVE
+            </span>
+</div>
+</div>
+</div>
+<!-- Quick stats in header -->
+<nav class="hidden md:flex items-center bg-lumen-cream/70 border border-lumen-stone p-1 rounded-full text-xs font-semibold shadow-sm ml-2"><button class="px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-bold shadow-sm transition" type="button">Dashboard</button><button class="px-4 py-1.5 rounded-full text-charcoal hover:bg-lumen-cream text-fog hover:text-charcoal transition" type="button">Teams</button><button class="px-4 py-1.5 rounded-full text-charcoal hover:bg-lumen-cream text-fog hover:text-charcoal transition" type="button">Judges</button><button class="px-4 py-1.5 rounded-full text-charcoal hover:bg-lumen-cream text-fog hover:text-charcoal transition" type="button">Manage</button></nav>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface hover:bg-lumen-cream text-charcoal text-xs font-semibold border border-lumen-stone shadow-sm transition active:scale-95" type="button">
+<span class="material-symbols-outlined text-base text-tertiary">campaign</span>
+        Broadcast
+      </button>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-container hover:bg-primary-container/80 text-on-primary-container text-xs font-bold border-2 border-primary/30 shadow-sm transition active:scale-95" type="button">
+<span class="material-symbols-outlined text-base">ring_volume</span>
+        + Call Next Team
+      </button>
+<div class="h-6 w-px bg-lumen-stone hidden sm:block"></div>
+<div class="flex items-center gap-2 pl-1">
+<div class="w-9 h-9 rounded-full bg-lumen-cream border border-lumen-stone flex items-center justify-center font-serif font-bold text-charcoal text-sm">
+          EV
+        </div>
+</div>
+</div>
+</header>
+<main class="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-6">
+<!-- SECTION 1: PANELS & ACTIVE TEAMS (LIVE ROOMS STATUS) -->
+<section>
+<div class="flex items-center justify-between mb-3 px-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h2 class="font-serif text-xl font-normal text-charcoal">Live Evaluation Panels</h2>
+<span class="text-xs text-fog font-medium">3 Rooms In Session</span>
+</div>
+<span class="text-xs text-fog font-medium">Target Cadence: 12m pitch / 5m Q&amp;A</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Panel A -->
+<div class="p-5 rounded-[28px] bg-lumen-cream border border-lumen-stone shadow-sm flex flex-col justify-between gap-4 relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-xl bg-surface border border-lumen-stone text-xs font-bold text-charcoal">Panel A</span>
+<span class="text-xs text-fog font-medium">Multimodal AI</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-secondary text-[11px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              Pitching
+            </span>
+</div>
+<div class="p-3.5 rounded-2xl bg-surface border border-lumen-stone/80">
+<div class="flex items-center justify-between">
+<span class="text-xs text-fog font-semibold uppercase tracking-wider">Presenting Now</span>
+<span class="text-xs font-mono font-bold text-secondary">07:42 / 12:00</span>
+</div>
+<div class="font-serif text-xl font-medium text-charcoal mt-1">Team NeuroFlow</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-xs text-on-surface-variant font-medium">Wispr Realtime Speech Engine</span>
+<span class="text-fog text-xs">•</span>
+<span class="text-xs text-tertiary font-semibold">Room #A-01</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-lumen-stone/60">
+<div class="flex items-center gap-2">
+<span class="text-xs text-fog font-medium">Next:</span>
+<span class="text-xs font-bold text-charcoal">Team LlamaAgents</span>
+<span class="px-1.5 py-0.2 rounded bg-surface border border-lumen-stone text-[10px] text-fog">In Lobby</span>
+</div>
+<button class="px-3 py-1 rounded-full bg-primary-container border border-primary/20 text-on-primary-container text-xs font-semibold hover:bg-primary hover:text-white transition active:scale-95">
+              Ping
+            </button>
+</div>
+</div>
+<!-- Panel B -->
+<div class="p-5 rounded-[28px] bg-lumen-cream border border-lumen-stone shadow-sm flex flex-col justify-between gap-4 relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-xl bg-surface border border-lumen-stone text-xs font-bold text-charcoal">Panel B</span>
+<span class="text-xs text-fog font-medium">Autonomous Agents</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container text-[11px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+              Q&amp;A
+            </span>
+</div>
+<div class="p-3.5 rounded-2xl bg-surface border border-lumen-stone/80">
+<div class="flex items-center justify-between">
+<span class="text-xs text-fog font-semibold uppercase tracking-wider">Presenting Now</span>
+<span class="text-xs font-mono font-bold text-tertiary">03:15 / 05:00</span>
+</div>
+<div class="font-serif text-xl font-medium text-charcoal mt-1">Team Cortex</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-xs text-on-surface-variant font-medium">Autonomous Sandbox Agent</span>
+<span class="text-fog text-xs">•</span>
+<span class="text-xs text-tertiary font-semibold">Room #B-02</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-lumen-stone/60">
+<div class="flex items-center gap-2">
+<span class="text-xs text-fog font-medium">Next:</span>
+<span class="text-xs font-bold text-charcoal">Team VisionCraft</span>
+<span class="px-1.5 py-0.2 rounded bg-surface border border-lumen-stone text-[10px] text-fog">Ready</span>
+</div>
+<button class="px-3 py-1 rounded-full bg-primary-container border border-primary/20 text-on-primary-container text-xs font-semibold hover:bg-primary hover:text-white transition active:scale-95">
+              Ping
+            </button>
+</div>
+</div>
+<!-- Panel C -->
+<div class="p-5 rounded-[28px] bg-lumen-cream border border-lumen-stone shadow-sm flex flex-col justify-between gap-4 relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-xl bg-surface border border-lumen-stone text-xs font-bold text-charcoal">Panel C</span>
+<span class="text-xs text-fog font-medium">Infrastructure &amp; Latency</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface border border-lumen-stone text-charcoal text-[11px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Screen Share
+            </span>
+</div>
+<div class="p-3.5 rounded-2xl bg-surface border border-lumen-stone/80">
+<div class="flex items-center justify-between">
+<span class="text-xs text-fog font-semibold uppercase tracking-wider">Presenting Now</span>
+<span class="text-xs font-mono font-bold text-charcoal">01:10 / 12:00</span>
+</div>
+<div class="font-serif text-xl font-medium text-charcoal mt-1">Team Synthetix</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-xs text-on-surface-variant font-medium">Sub-20ms WebRTC Pipeline</span>
+<span class="text-fog text-xs">•</span>
+<span class="text-xs text-tertiary font-semibold">Room #C-03</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-lumen-stone/60">
+<div class="flex items-center gap-2">
+<span class="text-xs text-fog font-medium">Next:</span>
+<span class="text-xs font-bold text-charcoal">Team OmniCore</span>
+<span class="px-1.5 py-0.2 rounded bg-surface border border-lumen-stone text-[10px] text-fog">In Lobby</span>
+</div>
+<button class="px-3 py-1 rounded-full bg-primary-container border border-primary/20 text-on-primary-container text-xs font-semibold hover:bg-primary hover:text-white transition active:scale-95">
+              Ping
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 2-COLUMN MAIN MATRIX (QUEUE + PPT SUBMISSIONS & DIRECTORY + JUDGES) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- LEFT SIDE (7 Cols): QUEUE & PPT SUBMISSIONS -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- SECTION 2: QUEUE & "NEXT TEAM TO CALL" -->
+<section class="p-6 rounded-[30px] bg-surface border border-lumen-stone shadow-sm">
+<div class="flex items-center justify-between pb-4 border-b border-lumen-stone">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-lg">queue_music</span>
+<div>
+<h3 class="font-serif text-xl font-normal text-charcoal leading-none">Queue: Next Teams to Call</h3>
+<p class="text-xs text-fog mt-0.5">Staged for incoming room handoffs</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-lumen-cream border border-lumen-stone text-xs font-bold text-charcoal">
+              4 Up Next
+            </span>
+</div>
+<div class="divide-y divide-lumen-stone/60 mt-2">
+<!-- Queue Item 1 -->
+<div class="py-3.5 flex items-center justify-between gap-3 group">
+<div class="flex items-center gap-3">
+<span class="w-6 text-center text-xs font-bold text-fog">#01</span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-semibold text-sm text-charcoal">Team LlamaAgents</span>
+<span class="px-2 py-0.2 rounded bg-primary-container text-on-primary-container text-[11px] font-semibold">Panel A</span>
+</div>
+<span class="text-xs text-fog">Agents Track • Ready in Waiting Room</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<button class="px-3.5 py-1.5 rounded-full bg-secondary text-white text-xs font-semibold hover:bg-secondary/90 transition flex items-center gap-1 active:scale-95" type="button">
+<span class="material-symbols-outlined text-sm">notifications_active</span>
+                  Call to Stage
+                </button>
+</div>
+</div>
+<!-- Queue Item 2 -->
+<div class="py-3.5 flex items-center justify-between gap-3 group">
+<div class="flex items-center gap-3">
+<span class="w-6 text-center text-xs font-bold text-fog">#02</span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-semibold text-sm text-charcoal">Team VisionCraft</span>
+<span class="px-2 py-0.2 rounded bg-tertiary-container text-on-tertiary-container text-[11px] font-semibold">Panel B</span>
+</div>
+<span class="text-xs text-fog">Vision Track • Deck Synced</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<button class="px-3.5 py-1.5 rounded-full bg-secondary text-white text-xs font-semibold hover:bg-secondary/90 transition flex items-center gap-1 active:scale-95" type="button">
+<span class="material-symbols-outlined text-sm">notifications_active</span>
+                  Call to Stage
+                </button>
+</div>
+</div>
+<!-- Queue Item 3 -->
+<div class="py-3.5 flex items-center justify-between gap-3 group">
+<div class="flex items-center gap-3">
+<span class="w-6 text-center text-xs font-bold text-fog">#03</span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-semibold text-sm text-charcoal">Team OmniCore</span>
+<span class="px-2 py-0.2 rounded bg-lumen-cream border border-lumen-stone text-charcoal text-[11px] font-semibold">Panel C</span>
+</div>
+<span class="text-xs text-fog">Infra Track • Tech Check OK</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<button class="px-3.5 py-1.5 rounded-full bg-secondary text-white text-xs font-semibold hover:bg-secondary/90 transition flex items-center gap-1 active:scale-95" type="button">
+<span class="material-symbols-outlined text-sm">notifications_active</span>
+                  Call to Stage
+                </button>
+</div>
+</div>
+<!-- Queue Item 4 -->
+<div class="py-3.5 flex items-center justify-between gap-3 group">
+<div class="flex items-center gap-3">
+<span class="w-6 text-center text-xs font-bold text-fog">#04</span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-semibold text-sm text-charcoal">Team HyperSpeech</span>
+<span class="px-2 py-0.2 rounded bg-primary-container text-on-primary-container text-[11px] font-semibold">Panel A</span>
+</div>
+<span class="text-xs text-fog">Multimodal Track • PPT Ready</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-fog/60"></span>
+<button class="px-3.5 py-1.5 rounded-full bg-lumen-cream border border-lumen-stone text-charcoal text-xs font-semibold hover:bg-surface transition flex items-center gap-1 active:scale-95" type="button">
+<span class="material-symbols-outlined text-sm">ring_volume</span>
+                  Ring
+                </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: PPT / SUBMISSIONS SUBMITTED BY TEAMS -->
+<section class="p-6 rounded-[30px] bg-surface border border-lumen-stone shadow-sm">
+<div class="flex items-center justify-between pb-4 border-b border-lumen-stone">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg">slideshow</span>
+<div>
+<h3 class="font-serif text-xl font-normal text-charcoal leading-none">Submitted PPT Decks &amp; Artifacts</h3>
+<p class="text-xs text-fog mt-0.5">Verified finalist presentation assets</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs text-fog">Recent 5</span>
+<span class="w-1 h-1 rounded-full bg-lumen-stone"></span>
+<a class="text-xs text-secondary font-semibold hover:underline" href="#">All Decks</a>
+</div>
+</div>
+<div class="overflow-x-auto mt-2">
+<table class="w-full text-left text-xs">
+<thead>
+<tr class="text-fog uppercase tracking-wider border-b border-lumen-stone/60">
+<th class="py-2.5 font-semibold">Team</th>
+<th class="py-2.5 font-semibold">Deck</th>
+<th class="py-2.5 font-semibold">Repository</th>
+<th class="py-2.5 font-semibold">Submitted</th>
+<th class="py-2.5 font-semibold text-right">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-lumen-stone/50 font-medium text-charcoal"><tr class="hover:bg-lumen-cream/50 transition"><td class="py-3"><div class="flex items-center gap-2"><span class="font-semibold text-charcoal">NeuroFlow</span><span class="px-1.5 py-0.2 rounded bg-primary-container text-on-primary-container text-[10px] font-semibold">Panel A</span></div></td><td class="py-3"><a class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-lumen-cream border border-lumen-stone text-charcoal font-semibold hover:bg-white transition" href="#"><span class="material-symbols-outlined text-xs text-tertiary">co_present</span> PitchDeck.pdf</a></td><td class="py-3"><span class="font-mono text-[11px] text-fog hover:text-charcoal cursor-pointer">github/neuroflow-ai</span></td><td class="py-3 text-fog">12m ago</td><td class="py-3 text-right"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-secondary text-[10px] font-bold"><span class="material-symbols-outlined text-[10px]">check</span> Verified</span></td></tr><tr class="hover:bg-lumen-cream/50 transition"><td class="py-3"><div class="flex items-center gap-2"><span class="font-semibold text-charcoal">Team Cortex</span><span class="px-1.5 py-0.2 rounded bg-tertiary-container text-on-tertiary-container text-[10px] font-semibold">Panel B</span></div></td><td class="py-3"><a class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-lumen-cream border border-lumen-stone text-charcoal font-semibold hover:bg-white transition" href="#"><span class="material-symbols-outlined text-xs text-tertiary">co_present</span> Cortex_v2.pptx</a></td><td class="py-3"><span class="font-mono text-[11px] text-fog hover:text-charcoal cursor-pointer">github/cortex-core</span></td><td class="py-3 text-fog">28m ago</td><td class="py-3 text-right"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-secondary text-[10px] font-bold"><span class="material-symbols-outlined text-[10px]">check</span> Verified</span></td></tr><tr class="hover:bg-lumen-cream/50 transition"><td class="py-3"><div class="flex items-center gap-2"><span class="font-semibold text-charcoal">Synthetix</span><span class="px-1.5 py-0.2 rounded bg-lumen-cream border border-lumen-stone text-charcoal text-[10px] font-semibold">Panel C</span></div></td><td class="py-3"><a class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-lumen-cream border border-lumen-stone text-charcoal font-semibold hover:bg-white transition" href="#"><span class="material-symbols-outlined text-xs text-tertiary">co_present</span> DemoDeck_Final.pdf</a></td><td class="py-3"><span class="font-mono text-[11px] text-fog hover:text-charcoal cursor-pointer">github/synthetix-rtc</span></td><td class="py-3 text-fog">41m ago</td><td class="py-3 text-right"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-secondary text-[10px] font-bold"><span class="material-symbols-outlined text-[10px]">check</span> Verified</span></td></tr><tr class="hover:bg-lumen-cream/50 transition"><td class="py-3"><div class="flex items-center gap-2"><span class="font-semibold text-charcoal">LlamaAgents</span><span class="px-1.5 py-0.2 rounded bg-primary-container text-on-primary-container text-[10px] font-semibold">Panel A</span></div></td><td class="py-3"><a class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-lumen-cream border border-lumen-stone text-charcoal font-semibold hover:bg-white transition" href="#"><span class="material-symbols-outlined text-xs text-tertiary">co_present</span> Keynote_Slides.pdf</a></td><td class="py-3"><span class="font-mono text-[11px] text-fog hover:text-charcoal cursor-pointer">github/llama-swarm</span></td><td class="py-3 text-fog">55m ago</td><td class="py-3 text-right"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-secondary text-[10px] font-bold"><span class="material-symbols-outlined text-[10px]">check</span> Verified</span></td></tr><tr class="hover:bg-lumen-cream/50 transition"><td class="py-3"><div class="flex items-center gap-2"><span class="font-semibold text-charcoal">VisionCraft</span><span class="px-1.5 py-0.2 rounded bg-tertiary-container text-on-tertiary-container text-[10px] font-semibold">Panel B</span></div></td><td class="py-3"><a class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-lumen-cream border border-lumen-stone text-charcoal font-semibold hover:bg-white transition" href="#"><span class="material-symbols-outlined text-xs text-tertiary">co_present</span> VisionDeck.pdf</a></td><td class="py-3"><span class="font-mono text-[11px] text-fog hover:text-charcoal cursor-pointer">github/visioncraft-ui</span></td><td class="py-3 text-fog">1h 10m ago</td><td class="py-3 text-right"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-secondary text-[10px] font-bold"><span class="material-symbols-outlined text-[10px]">check</span> Verified</span></td></tr></tbody>
+</table>
+</div>
+</section>
+</div>
+<!-- RIGHT SIDE (5 Cols): REGISTERED TEAMS & QUICK DIRECTORY + JUDGES -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- SECTION 4: REGISTERED TEAMS & QUICK DIRECTORY -->
+<section class="p-6 rounded-[30px] bg-lumen-cream border border-lumen-stone shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-3 border-b border-lumen-stone">
+<div>
+<span class="text-xs font-semibold text-fog uppercase tracking-wider">Directory</span>
+<h3 class="font-serif text-xl font-normal text-charcoal">Registered Teams</h3>
+</div>
+<div class="text-right">
+<span class="font-serif text-2xl font-normal text-charcoal">142</span>
+<span class="text-xs px-2 py-0.5 rounded-full bg-secondary-container text-secondary font-bold ml-1">98% In</span>
+</div>
+</div>
+<!-- Quick Directory List -->
+<div class="flex flex-col gap-2">
+<!-- Directory item -->
+<div class="p-3 rounded-2xl bg-surface border border-lumen-stone/80 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-xl bg-lumen-cream border border-lumen-stone flex items-center justify-center font-bold text-xs text-charcoal">
+                  01
+                </div>
+<div>
+<span class="font-semibold text-xs text-charcoal">Team NeuroFlow</span>
+<div class="text-[11px] text-fog">4 Members • Voice Track</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary text-[11px] font-semibold">Active Panel A</span>
+</div>
+<!-- Directory item -->
+<div class="p-3 rounded-2xl bg-surface border border-lumen-stone/80 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-xl bg-lumen-cream border border-lumen-stone flex items-center justify-center font-bold text-xs text-charcoal">
+                  02
+                </div>
+<div>
+<span class="font-semibold text-xs text-charcoal">Team Cortex</span>
+<div class="text-[11px] text-fog">3 Members • Multimodal</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary text-[11px] font-semibold">Active Panel B</span>
+</div>
+<!-- Directory item -->
+<div class="p-3 rounded-2xl bg-surface border border-lumen-stone/80 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-xl bg-lumen-cream border border-lumen-stone flex items-center justify-center font-bold text-xs text-charcoal">
+                  03
+                </div>
+<div>
+<span class="font-semibold text-xs text-charcoal">Team Synthetix</span>
+<div class="text-[11px] text-fog">5 Members • Infra Track</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary text-[11px] font-semibold">Active Panel C</span>
+</div>
+<!-- Directory item -->
+<div class="p-3 rounded-2xl bg-surface border border-lumen-stone/80 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-xl bg-lumen-cream border border-lumen-stone flex items-center justify-center font-bold text-xs text-charcoal">
+                  04
+                </div>
+<div>
+<span class="font-semibold text-xs text-charcoal">Team LlamaAgents</span>
+<div class="text-[11px] text-fog">4 Members • Agents Track</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface border border-lumen-stone text-fog text-[11px] font-semibold">Queue #1</span>
+</div>
+<!-- Directory item -->
+<div class="p-3 rounded-2xl bg-surface border border-lumen-stone/80 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-xl bg-lumen-cream border border-lumen-stone flex items-center justify-center font-bold text-xs text-charcoal">
+                  05
+                </div>
+<div>
+<span class="font-semibold text-xs text-charcoal">Team VisionCraft</span>
+<div class="text-[11px] text-fog">3 Members • Vision Track</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface border border-lumen-stone text-fog text-[11px] font-semibold">Queue #2</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-4 rounded-2xl bg-surface hover:bg-white border border-lumen-stone text-xs font-semibold text-charcoal flex items-center justify-center gap-2 shadow-sm transition active:scale-95" type="button"><span>View All 142 Teams (137 remaining)</span><span class="material-symbols-outlined text-sm text-secondary">arrow_forward</span></button></section>
+<!-- SECTION 5: JUDGE LIST -->
+<section class="p-6 rounded-[30px] bg-surface border border-lumen-stone shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-3 border-b border-lumen-stone">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">gavel</span>
+<h3 class="font-serif text-xl font-normal text-charcoal">Judges Roster</h3>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-secondary text-xs font-semibold">4 / 4 Online</span>
+</div>
+<div class="flex flex-col gap-2.5"><div class="p-3 rounded-2xl bg-lumen-cream/70 border border-lumen-stone flex flex-col gap-2"><div class="flex items-center justify-between text-xs"><span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container text-[11px] font-bold">Panel A • Multimodal AI</span><span class="text-[11px] font-semibold text-secondary">12/15 Teams Attended (80%)</span></div><div class="flex items-center justify-between pt-1 border-t border-lumen-stone/60"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container font-serif font-bold text-xs flex items-center justify-center">AT</div><div><div class="font-semibold text-xs text-charcoal">Dr. Aris Thorne</div><div class="text-[11px] text-fog">Lead AI Scientist</div></div></div><div class="text-right"><span class="inline-flex items-center gap-1 text-[11px] text-secondary font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> Active Room #A-01</span></div></div></div><div class="p-3 rounded-2xl bg-lumen-cream/70 border border-lumen-stone flex flex-col gap-2"><div class="flex items-center justify-between text-xs"><span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container text-[11px] font-bold">Panel B • Autonomous Agents</span><span class="text-[11px] font-semibold text-tertiary">11/15 Teams Attended (73%)</span></div><div class="flex items-center justify-between pt-1 border-t border-lumen-stone/60"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container font-serif font-bold text-xs flex items-center justify-center">EV</div><div><div class="font-semibold text-xs text-charcoal">Elena Vance</div><div class="text-[11px] text-fog">Director Organizer</div></div></div><div class="text-right"><span class="inline-flex items-center gap-1 text-[11px] text-secondary font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> Active Room #B-02</span></div></div></div><div class="p-3 rounded-2xl bg-lumen-cream/70 border border-lumen-stone flex flex-col gap-2"><div class="flex items-center justify-between text-xs"><span class="px-2 py-0.5 rounded-full bg-surface border border-lumen-stone text-charcoal text-[11px] font-bold">Panel C • Infra &amp; Latency</span><span class="text-[11px] font-semibold text-secondary">10/15 Teams Attended (67%)</span></div><div class="flex items-center justify-between pt-1 border-t border-lumen-stone/60"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container font-serif font-bold text-xs flex items-center justify-center">ML</div><div><div class="font-semibold text-xs text-charcoal">Marcus Lin</div><div class="text-[11px] text-fog">Principal Engineer</div></div></div><div class="text-right"><span class="inline-flex items-center gap-1 text-[11px] text-secondary font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> Active Room #C-03</span></div></div></div><div class="p-3 rounded-2xl bg-lumen-cream/70 border border-lumen-stone flex flex-col gap-2"><div class="flex items-center justify-between text-xs"><span class="px-2 py-0.5 rounded-full bg-surface border border-lumen-stone text-fog text-[11px] font-bold uppercase tracking-wider">Floater / Cross-Panel</span><span class="text-[11px] font-semibold text-fog">5 Reviews Completed</span></div><div class="flex items-center justify-between pt-1 border-t border-lumen-stone/60"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-full bg-surface border border-lumen-stone text-charcoal font-serif font-bold text-xs flex items-center justify-center">SC</div><div><div class="font-semibold text-xs text-charcoal">Sophia Chen</div><div class="text-[11px] text-fog">VC Syndicate</div></div></div><div class="text-right"><span class="inline-flex items-center gap-1 text-[11px] text-secondary font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Roaming</span></div></div></div></div>
+</section>
+</div>
+</div>
+</main>
+</body></html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container-lowest": "#ffffff",
+          "surface-variant": "#e5e2e1",
+          "lumen-cream": "#ffffeb",
+          "error-container": "#ffdad6",
+          "inverse-surface": "#313030",
+          "secondary-container": "#afefe2",
+          "on-secondary": "#ffffff",
+          "on-tertiary-container": "#905500",
+          "on-primary-fixed": "#251432",
+          "pure-white": "#ffffff",
+          "inverse-primary": "#d6bee5",
+          "tertiary-fixed": "#ffdcbd",
+          "surface-container-highest": "#e5e2e1",
+          "error": "#ba1a1a",
+          "outline-variant": "#ccc4cd",
+          "background": "#fcf9f8",
+          "primary-fixed-dim": "#d6bee5",
+          "on-primary": "#ffffff",
+          "tertiary-fixed-dim": "#ffb86d",
+          "charcoal": "#222222",
+          "secondary-fixed": "#afefe2",
+          "on-surface-variant": "#4a454c",
+          "on-tertiary-fixed": "#2c1600",
+          "on-tertiary": "#ffffff",
+          "on-secondary-container": "#306e65",
+          "tertiary-container": "#ffd9b6",
+          "on-background": "#1c1b1b",
+          "surface-container-low": "#f6f3f2",
+          "secondary": "#29685f",
+          "surface-bright": "#fcf9f8",
+          "lumen-stone": "#e4e4d0",
+          "on-primary-fixed-variant": "#524060",
+          "outline": "#7c757d",
+          "fog": "#8a8a80",
+          "on-surface": "#1c1b1b",
+          "on-error-container": "#93000a",
+          "tertiary": "#8a5100",
+          "on-primary-container": "#6f5b7d",
+          "inverse-on-surface": "#f3f0ef",
+          "surface-container-high": "#eae7e7",
+          "on-secondary-fixed-variant": "#055047",
+          "surface": "#fcf9f8",
+          "surface-container": "#f0eded",
+          "surface-tint": "#6a5778",
+          "primary-fixed": "#f2daff",
+          "on-secondary-fixed": "#00201c",
+          "on-tertiary-fixed-variant": "#683c00",
+          "secondary-fixed-dim": "#94d2c6",
+          "surface-dim": "#dcd9d9",
+          "primary-container": "#f0d7ff",
+          "on-error": "#ffffff",
+          "primary": "#6a5778"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "2.5rem",
+          "gutter-mobile": "1rem",
+          "gutter": "1.5rem",
+          "space-sm": "1rem",
+          "space-xs": "0.5rem",
+          "space-md": "1.5rem",
+          "margin-mobile": "1rem",
+          "space-lg": "2rem",
+          "space-xl": "3.5rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "EB Garamond"
+          ],
+          "headline-sm": [
+            "EB Garamond"
+          ],
+          "headline-lg-mobile": [
+            "EB Garamond"
+          ],
+          "body-base": [
+            "Plus Jakarta Sans"
+          ],
+          "subheading": [
+            "Plus Jakarta Sans"
+          ],
+          "display-mobile": [
+            "EB Garamond"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-base-bold": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md-mobile": [
+            "EB Garamond"
+          ],
+          "headline-md": [
+            "EB Garamond"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display": [
+            "EB Garamond"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "64px",
+            {
+              "lineHeight": "61px",
+              "letterSpacing": "-1.92px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "32px",
+            {
+              "lineHeight": "41px",
+              "letterSpacing": "-0.96px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "40px",
+            {
+              "lineHeight": "42px",
+              "letterSpacing": "-1px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-base": [
+            "16px",
+            {
+              "lineHeight": "21px",
+              "letterSpacing": "0px",
+              "fontWeight": "400"
+            }
+          ],
+          "subheading": [
+            "24px",
+            {
+              "lineHeight": "31px",
+              "letterSpacing": "-0.2px",
+              "fontWeight": "500"
+            }
+          ],
+          "display-mobile": [
+            "56px",
+            {
+              "lineHeight": "54px",
+              "letterSpacing": "-1.5px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.4px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-base-bold": [
+            "16px",
+            {
+              "lineHeight": "21px",
+              "letterSpacing": "0px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "14px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md-mobile": [
+            "32px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.5px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "48px",
+            {
+              "lineHeight": "46px",
+              "letterSpacing": "-0.5px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "20px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "0px",
+              "fontWeight": "400"
+            }
+          ],
+          "display": [
+            "120px",
+            {
+              "lineHeight": "102px",
+              "letterSpacing": "-3.6px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      }
+    }
+  }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-base text-on-surface"><header class="fixed top-0 w-full z-50 bg-lumen-cream/90 backdrop-blur-md border-b border-charcoal/10"><div class="h-20 max-w-[1200px] mx-auto px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-xs"><div class="w-9 h-9 rounded-xl bg-tertiary-container border border-charcoal/10 flex items-center justify-center font-headline-sm text-headline-sm text-on-tertiary-container shadow-sm">M</div><div class="flex flex-col"><span class="font-body-base-bold text-body-base-bold text-on-surface tracking-tight leading-none">Mango Studio</span><span class="font-label-sm text-label-sm text-fog uppercase tracking-wider">Setup OS</span></div></div><nav class="hidden lg:flex items-center gap-space-xs bg-surface-container-low p-1.5 rounded-full border border-charcoal/10 shadow-sm" data-active-classes="bg-primary-container text-on-surface border border-charcoal/15 rounded-full font-body-base-bold"><a class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="overview" href="#">01. Overview</a><a class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="tracks-and-rubrics" href="#">02. Tracks &amp; Rubrics</a><a class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="reviewers" href="#">03. Reviewers</a><a class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="schedule" href="#">04. Schedule</a></nav><div class="flex items-center gap-space-sm"><button class="px-space-md py-2.5 rounded-xl border border-charcoal/20 bg-surface font-body-base-bold text-label-md text-on-surface hover:bg-surface-variant transition-colors shadow-sm" type="button">Save Draft</button><div class="w-9 h-9 rounded-full border border-charcoal/10 overflow-hidden p-0.5 bg-tertiary-fixed"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UT380eD2f4DQy2PRL7xWoutcO_zEzfLb96LbO8SE7gnXA6YR7chD3hRsdWrIFIfHezVfQuVPuf7ljeARndNmxdWm6Wu5Z_umNLLw4E5qv7h6jGHSd_EOuBEx3uDeJtfnzIcFFTgCtm55Z-2o1kuxsRwzAg0kf5-VrZcqNY10Rqh1Hkn3kD6NCq0dRru1ToLGHdDMLzmJfJrFwM6px3-bLaN2hMSMRIBT1FwTSPRTHLha2BjOWdwF-uUm88uhEuqnFkQ4Ux_bWCCuQ"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<div class="max-w-[1200px] w-full mx-auto px-gutter py-space-lg flex flex-col gap-space-xl">
+<!-- Top Stepper Indicator (Aligned to Shell Nav) -->
+<div class="flex items-center justify-between border-b-2 border-charcoal/10 pb-space-sm">
+<div class="flex items-center gap-space-md text-label-md">
+<a class="flex items-center gap-1.5 text-fog hover:text-on-surface transition-colors" href="#">
+<span class="w-5 h-5 rounded-full bg-secondary text-pure-white flex items-center justify-center text-label-sm font-body-base-bold">✓</span>
+<span>01. Overview</span>
+</a>
+<span class="text-fog">/</span>
+<a class="flex items-center gap-1.5 text-fog hover:text-on-surface transition-colors" href="#">
+<span class="w-5 h-5 rounded-full bg-secondary text-pure-white flex items-center justify-center text-label-sm font-body-base-bold">✓</span>
+<span>02. Tracks &amp; Rubrics</span>
+</a>
+<span class="text-fog">/</span>
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container border border-charcoal/20 text-on-surface font-body-base-bold shadow-sm"><span class="w-2 h-2 rounded-full bg-charcoal"></span><span>03. Reviewers</span></div>
+<span class="text-fog">/</span>
+<span class="text-fog">04. Schedule</span>
+</div>
+<div class="hidden sm:flex items-center gap-2 text-label-sm text-fog">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span>Autosaved 2m ago</span>
+</div>
+</div>
+<!-- Page Title & Mascot Companion Tip -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-fog uppercase tracking-widest block mb-1">Jury Assembly</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Reviewers &amp; Judges</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-2xl font-light">
+            Assemble your evaluation jury and mentors, assign track responsibilities, and calibrate deliberation visibility.
+          </p>
+</div>
+<!-- Clean Mascot Tip Banner -->
+<div class="flex items-center gap-space-sm bg-lumen-cream border border-charcoal/15 rounded-2xl p-3 px-4 max-w-md shrink-0 shadow-sm"><img alt="Mango Companion" class="w-12 h-12 rounded-xl object-cover shrink-0 border border-charcoal/10 bg-tertiary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe-iqR9nsFF5zE_t3pwcv7X9muhsrICGYo9LT9cMhj2U9XZzWyUBHstZtF6qOyou3qVwHFE6polCknUoK4oO-GzHcxqvSEuxIEvR2s91su4T_8GsGv8YaA_n_c7PzTMZWLP2jgaAsqWh4nYSU7jfLVcd0KN1oRCfJ6Q6BoOVwjEXilWjo4J_RjXBdtQaFXWO6PieqPcKmuMaow6juA-MpI0ckye3UvXvdcoAg7AB74LPlY6vsR_uHe6m5Dh3fB0c4CrcI"/><div class="flex flex-col"><span class="font-body-base-bold text-label-md text-on-surface">Director's Pro-Tip</span><p class="font-body-base text-label-sm text-on-surface-variant">Aim for 3–4 judges per track to balance score variance and avoid evaluation burnout.</p></div></div>
+</div>
+</div>
+<!-- Quick Add Single-Line Bar -->
+<div class="bg-lumen-cream border border-charcoal/15 rounded-2xl p-space-md flex flex-col gap-3 shadow-sm"><div class="text-label-sm font-body-base-bold uppercase tracking-wider text-fog">Quick Invite Jury or Mentor</div><form class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center" id="invite-form" onsubmit="event.preventDefault();"><div class="md:col-span-5 relative"><input class="w-full h-14 bg-surface-container-lowest border border-charcoal/20 rounded-xl px-4 font-body-base text-on-surface placeholder:text-fog focus:outline-none focus:ring-2 focus:ring-charcoal/30 shadow-sm" id="invite-email" placeholder="colleague@institute.edu or @handle" type="email"/></div><div class="md:col-span-2"><select class="w-full h-14 bg-surface-container-lowest border border-charcoal/20 rounded-xl px-4 font-body-base text-on-surface focus:outline-none cursor-pointer shadow-sm" id="invite-role"><option value="Judge">Role: Judge</option><option value="Lead Judge">Role: Lead Judge</option><option value="Mentor">Role: Mentor</option></select></div><div class="md:col-span-3"><select class="w-full h-14 bg-surface-container-lowest border border-charcoal/20 rounded-xl px-4 font-body-base text-on-surface focus:outline-none cursor-pointer shadow-sm" id="invite-track"><option value="All Tracks">Assignment: All Tracks</option><option value="Flagship Track">Assignment: Flagship Track</option><option value="Wispr Voice Bounty">Assignment: Wispr Voice Bounty</option><option value="General Advisory">Assignment: General Advisory</option></select></div><div class="md:col-span-2"><button class="w-full h-14 bg-charcoal text-lumen-cream rounded-xl font-body-base-bold text-label-md flex items-center justify-center gap-2 hover:bg-on-surface-variant transition-colors shadow-sm" onclick="addReviewer()" type="button"><span class="material-symbols-outlined text-[20px]">add</span><span>Invite</span></button></div></form><div class="flex items-center justify-between text-label-sm pt-1"><div class="flex items-center gap-2 text-fog"><span>Need bulk invites?</span><button class="text-on-surface underline hover:text-primary transition-colors" type="button">Import CSV roster</button></div><button class="flex items-center gap-1.5 text-on-surface font-body-base-bold hover:text-primary transition-colors" onclick="copyInviteLink()" type="button"><span class="material-symbols-outlined text-[16px]">link</span><span id="copy-btn-text">Copy public juror application link</span></button></div></div>
+<!-- Confirmed Reviewers List Section -->
+<div class="flex flex-col gap-space-md">
+<!-- Sub-header & Filter Tabs -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm border-b-2 border-charcoal/10 pb-space-xs">
+<div class="flex items-center gap-3">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Confirmed Roster</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-lumen-stone border border-charcoal/30 text-label-sm font-body-base-bold text-on-surface" id="roster-count">
+            4 Active
+          </span>
+</div>
+<!-- Filter Segment -->
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-xl border border-charcoal/20 text-label-md">
+<button class="roster-tab px-3 py-1 rounded-lg bg-surface-container-lowest font-body-base-bold text-on-surface transition-all" onclick="filterRoster('all', this)" type="button">All</button>
+<button class="roster-tab px-3 py-1 rounded-lg text-fog hover:text-on-surface transition-all" onclick="filterRoster('judge', this)" type="button">Judges</button>
+<button class="roster-tab px-3 py-1 rounded-lg text-fog hover:text-on-surface transition-all" onclick="filterRoster('mentor', this)" type="button">Mentors</button>
+</div>
+</div>
+<!-- Spacious, Uncluttered Reviewer Cards -->
+<div class="flex flex-col gap-3" id="roster-list"><div class="reviewer-item flex flex-col md:flex-row md:items-center justify-between gap-4 p-5 bg-surface-container-lowest border border-charcoal/15 rounded-2xl hover:bg-lumen-cream/40 transition-colors shadow-sm" data-role="judge"><div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full border border-charcoal/10 bg-secondary-container flex items-center justify-center font-headline-sm text-on-secondary-container font-medium shrink-0">AT</div><div><div class="flex items-center gap-2"><span class="font-headline-sm text-[22px] text-on-surface leading-snug">Dr. Aris Thorne</span><span class="px-2 py-0.5 rounded-md bg-charcoal text-pure-white text-[11px] font-body-base-bold uppercase tracking-wider">Lead Judge</span></div><p class="font-body-base text-label-sm text-fog mt-0.5">aris.thorne@oxford-research.org · Assigned: <strong class="text-on-surface font-body-base-bold">All Tracks</strong></p></div></div><div class="flex items-center justify-between md:justify-end gap-space-md"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary/10 text-secondary border border-secondary/20 text-label-sm font-body-base-bold"><span class="material-symbols-outlined text-[15px]">check_circle</span>Accepted</span><button class="w-9 h-9 rounded-lg border border-charcoal/20 flex items-center justify-center text-fog hover:text-error hover:border-error transition-colors" onclick="removeRow(this)" title="Remove juror" type="button"><span class="material-symbols-outlined text-[18px]">close</span></button></div></div><div class="reviewer-item flex flex-col md:flex-row md:items-center justify-between gap-4 p-5 bg-surface-container-lowest border border-charcoal/15 rounded-2xl hover:bg-lumen-cream/40 transition-colors shadow-sm" data-role="judge"><div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full border border-charcoal/10 bg-primary-container flex items-center justify-center font-headline-sm text-on-primary-container font-medium shrink-0">EV</div><div><div class="flex items-center gap-2"><span class="font-headline-sm text-[22px] text-on-surface leading-snug">Elena Vance</span><span class="px-2 py-0.5 rounded-md bg-surface-container-high border border-charcoal/10 text-on-surface text-[11px] font-body-base-bold uppercase tracking-wider">Judge</span></div><p class="font-body-base text-label-sm text-fog mt-0.5">elena@blackmesa-systems.io · Assigned: <strong class="text-on-surface font-body-base-bold">Flagship Track</strong></p></div></div><div class="flex items-center justify-between md:justify-end gap-space-md"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary/10 text-secondary border border-secondary/20 text-label-sm font-body-base-bold"><span class="material-symbols-outlined text-[15px]">check_circle</span>Accepted</span><button class="w-9 h-9 rounded-lg border border-charcoal/20 flex items-center justify-center text-fog hover:text-error hover:border-error transition-colors" onclick="removeRow(this)" title="Remove juror" type="button"><span class="material-symbols-outlined text-[18px]">close</span></button></div></div><div class="reviewer-item flex flex-col md:flex-row md:items-center justify-between gap-4 p-5 bg-surface-container-lowest border border-charcoal/15 rounded-2xl hover:bg-lumen-cream/40 transition-colors shadow-sm" data-role="judge"><div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full border border-charcoal/10 bg-tertiary-fixed flex items-center justify-center font-headline-sm text-on-tertiary-fixed font-medium shrink-0">ML</div><div><div class="flex items-center gap-2"><span class="font-headline-sm text-[22px] text-on-surface leading-snug">Marcus Lin</span><span class="px-2 py-0.5 rounded-md bg-surface-container-high border border-charcoal/10 text-on-surface text-[11px] font-body-base-bold uppercase tracking-wider">Judge</span></div><p class="font-body-base text-label-sm text-fog mt-0.5">marcus.lin@wispr.ai · Assigned: <strong class="text-on-surface font-body-base-bold">Wispr Voice Bounty</strong></p></div></div><div class="flex items-center justify-between md:justify-end gap-space-md"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary/10 text-secondary border border-secondary/20 text-label-sm font-body-base-bold"><span class="material-symbols-outlined text-[15px]">check_circle</span>Accepted</span><button class="w-9 h-9 rounded-lg border border-charcoal/20 flex items-center justify-center text-fog hover:text-error hover:border-error transition-colors" onclick="removeRow(this)" title="Remove juror" type="button"><span class="material-symbols-outlined text-[18px]">close</span></button></div></div><div class="reviewer-item flex flex-col md:flex-row md:items-center justify-between gap-4 p-5 bg-surface-container-lowest border border-charcoal/15 rounded-2xl hover:bg-lumen-cream/40 transition-colors shadow-sm" data-role="mentor"><div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full border border-charcoal/10 bg-surface-variant flex items-center justify-center font-headline-sm text-on-surface font-medium shrink-0">SC</div><div><div class="flex items-center gap-2"><span class="font-headline-sm text-[22px] text-on-surface leading-snug">Sophia Chen</span><span class="px-2 py-0.5 rounded-md bg-tertiary-container border border-tertiary/20 text-on-tertiary-container text-[11px] font-body-base-bold uppercase tracking-wider">Mentor</span></div><p class="font-body-base text-label-sm text-fog mt-0.5">sophia@foundry-capital.com · Focus: <strong class="text-on-surface font-body-base-bold">General Advisory</strong></p></div></div><div class="flex items-center justify-between md:justify-end gap-space-md"><button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary/10 text-tertiary border border-tertiary/30 text-label-sm font-body-base-bold hover:bg-tertiary/20 transition-colors" onclick="resendInvite(this)" type="button"><span class="material-symbols-outlined text-[15px]">mail</span><span>Pending (Resend)</span></button><button class="w-9 h-9 rounded-lg border border-charcoal/20 flex items-center justify-center text-fog hover:text-error hover:border-error transition-colors" onclick="removeRow(this)" title="Remove juror" type="button"><span class="material-symbols-outlined text-[18px]">close</span></button></div></div></div>
+</div>
+<!-- Essential Settings: Exactly 2 Crisp Structural Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md"><div class="bg-lumen-cream border border-charcoal/15 rounded-3xl p-space-md flex flex-col justify-between shadow-sm"><div><div class="flex items-center justify-between mb-2"><span class="font-headline-sm text-[26px] text-on-surface">Scoring Privacy</span><span class="material-symbols-outlined text-fog">shield</span></div><p class="font-body-base text-label-md text-on-surface-variant mb-space-md">Control whether judges can view peer scores and comments before the collective final round.</p><div class="flex flex-col gap-2.5"><label class="flex items-start gap-3 p-3.5 bg-surface-container-lowest border border-charcoal/15 rounded-xl cursor-pointer hover:bg-surface-variant transition-colors shadow-sm"><input checked="" class="mt-1 accent-charcoal w-4 h-4 cursor-pointer" name="privacy-mode" type="radio" value="blind"/><div class="flex flex-col"><span class="font-body-base-bold text-label-md text-on-surface">Blind Review (Recommended)</span><span class="font-body-base text-label-sm text-fog">Evaluators score in isolation. Scores only combine in Director view.</span></div></label><label class="flex items-start gap-3 p-3.5 bg-surface-container-lowest border border-charcoal/15 rounded-xl cursor-pointer hover:bg-surface-variant transition-colors shadow-sm"><input class="mt-1 accent-charcoal w-4 h-4 cursor-pointer" name="privacy-mode" type="radio" value="open"/><div class="flex flex-col"><span class="font-body-base-bold text-label-md text-on-surface">Open Deliberation</span><span class="font-body-base text-label-sm text-fog">Jury sees ongoing live scorecards and written remarks immediately.</span></div></label></div></div></div><div class="bg-lumen-cream border border-charcoal/15 rounded-3xl p-space-md flex flex-col justify-between shadow-sm"><div><div class="flex items-center justify-between mb-2"><span class="font-headline-sm text-[26px] text-on-surface">Target Reviews per Project</span><span class="material-symbols-outlined text-fog">tune</span></div><p class="font-body-base text-label-md text-on-surface-variant mb-space-md">Algorithm assigns queues until each team reaches this exact number of completed scorecards.</p><div class="grid grid-cols-3 gap-space-sm mb-4" id="quorum-selector"><button class="quorum-btn p-3.5 border border-charcoal/15 rounded-xl bg-surface-container-lowest text-center hover:bg-surface-variant transition-all shadow-sm" onclick="selectQuorum(2, this)" type="button"><span class="block font-headline-sm text-headline-sm text-on-surface">2</span><span class="block font-label-sm text-label-sm text-fog mt-1">Lean Jury</span></button><button class="quorum-btn p-3.5 border border-primary/30 rounded-xl bg-primary-container text-center transition-all font-body-base-bold shadow-sm" onclick="selectQuorum(3, this)" type="button"><span class="block font-headline-sm text-headline-sm text-on-surface">3</span><span class="block font-label-sm text-label-sm text-on-primary-container mt-1">Recommended</span></button><button class="quorum-btn p-3.5 border border-charcoal/15 rounded-xl bg-surface-container-lowest text-center hover:bg-surface-variant transition-all shadow-sm" onclick="selectQuorum(4, this)" type="button"><span class="block font-headline-sm text-headline-sm text-on-surface">4</span><span class="block font-label-sm text-label-sm text-fog mt-1">High Precision</span></button></div><p class="text-label-sm text-fog flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">info</span><span>Based on 40 expected submissions, target requires ~120 total jury reviews.</span></p></div></div></div>
+<!-- Bottom Navigation Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg border-t border-charcoal/10"><button class="w-full sm:w-auto px-6 py-3.5 rounded-xl border border-charcoal/20 bg-surface font-body-base-bold text-label-md text-on-surface hover:bg-surface-variant transition-colors flex items-center justify-center gap-2 shadow-sm" type="button"><span class="material-symbols-outlined text-[20px]">arrow_back</span><span>Back to Tracks &amp; Rubrics</span></button><div class="flex items-center gap-space-md w-full sm:w-auto"><span class="hidden md:inline text-label-sm text-fog font-medium">Stage 3 of 4 Complete</span><button class="w-full sm:w-auto px-8 py-3.5 rounded-xl border border-primary/30 bg-primary-container text-on-surface font-body-base-bold text-label-md hover:bg-primary-fixed-dim transition-all flex items-center justify-center gap-2 shadow-sm" type="button"><span>Continue to Schedule &amp; Launch</span><span class="material-symbols-outlined text-[20px]">arrow_forward</span></button></div></div>
+</div>
+</div>
+<script>
+  function filterRoster(category, btn) {
+    const tabs = document.querySelectorAll('.roster-tab');
+    tabs.forEach(t => {
+      t.classList.remove('bg-surface-container-lowest', 'font-body-base-bold', 'text-on-surface');
+      t.classList.add('text-fog');
+    });
+    btn.classList.add('bg-surface-container-lowest', 'font-body-base-bold', 'text-on-surface');
+    btn.classList.remove('text-fog');
+
+    const items = document.querySelectorAll('.reviewer-item');
+    items.forEach(item => {
+      if (category === 'all' || item.dataset.role === category) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  function selectQuorum(count, btn) {
+    const buttons = document.querySelectorAll('.quorum-btn');
+    buttons.forEach(b => {
+      b.classList.remove('bg-primary-container', 'font-body-base-bold');
+      b.classList.add('bg-surface-container-lowest');
+    });
+    btn.classList.add('bg-primary-container', 'font-body-base-bold');
+    btn.classList.remove('bg-surface-container-lowest');
+  }
+
+  function removeRow(btn) {
+    const row = btn.closest('.reviewer-item');
+    if (row) {
+      row.remove();
+      updateCount();
+    }
+  }
+
+  function updateCount() {
+    const count = document.querySelectorAll('.reviewer-item').length;
+    const badge = document.getElementById('roster-count');
+    if (badge) {
+      badge.textContent = `${count} Active`;
+    }
+  }
+
+  function resendInvite(btn) {
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[15px]">send</span><span>Sent!</span>`;
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+    }, 2000);
+  }
+
+  function copyInviteLink() {
+    const btnText = document.getElementById('copy-btn-text');
+    navigator.clipboard?.writeText(window.location.origin + '/apply-jury');
+    const prev = btnText.innerText;
+    btnText.innerText = "Copied to clipboard!";
+    setTimeout(() => {
+      btnText.innerText = prev;
+    }, 2000);
+  }
+
+  function addReviewer() {
+    const emailInput = document.getElementById('invite-email');
+    const roleSelect = document.getElementById('invite-role');
+    const trackSelect = document.getElementById('invite-track');
+    const email = emailInput.value.trim();
+
+    if (!email) {
+      emailInput.focus();
+      return;
+    }
+
+    const initials = email.substring(0, 2).toUpperCase();
+    const role = roleSelect.value;
+    const track = trackSelect.value;
+    const roleKey = role.toLowerCase().includes('mentor') ? 'mentor' : 'judge';
+
+    const rosterList = document.getElementById('roster-list');
+    const newRow = document.createElement('div');
+    newRow.className = "reviewer-item flex flex-col md:flex-row md:items-center justify-between gap-4 p-5 bg-surface-container-lowest border-2 border-charcoal rounded-2xl hover:bg-lumen-cream/40 transition-colors";
+    newRow.dataset.role = roleKey;
+    newRow.innerHTML = `
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-full border-2 border-charcoal bg-secondary-container flex items-center justify-center font-headline-sm text-on-secondary-container font-medium shrink-0">
+          ${initials}
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-headline-sm text-[22px] text-on-surface leading-snug">${email.split('@')[0]}</span>
+            <span class="px-2 py-0.5 rounded-md ${role.includes('Lead') ? 'bg-charcoal text-pure-white' : 'bg-surface-container-high text-on-surface border border-charcoal/20'} text-[11px] font-body-base-bold uppercase tracking-wider">${role}</span>
+          </div>
+          <p class="font-body-base text-label-sm text-fog mt-0.5">${email} · Assigned: <strong class="text-on-surface font-body-base-bold">${track}</strong></p>
+        </div>
+      </div>
+      <div class="flex items-center justify-between md:justify-end gap-space-md">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary/10 text-tertiary border border-tertiary/30 text-label-sm font-body-base-bold">
+          <span class="material-symbols-outlined text-[15px]">mail</span>
+          Invite Sent
+        </span>
+        <button type="button" onclick="removeRow(this)" class="w-9 h-9 rounded-lg border border-charcoal/20 flex items-center justify-center text-fog hover:text-error hover:border-error transition-colors" title="Remove juror">
+          <span class="material-symbols-outlined text-[18px]">close</span>
+        </button>
+      </div>
+    `;
+
+    rosterList.prepend(newRow);
+    emailInput.value = '';
+    updateCount();
+  }
+</script></main><footer class="w-full bg-charcoal text-lumen-cream py-space-xl border-t-2 border-charcoal"><div class="max-w-[1200px] mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-start gap-1"><span class="font-headline-sm text-headline-sm text-lumen-cream">Mango Studio</span><p class="font-label-sm text-label-sm text-fog">© 2025 Mango OS Publishing. Built for Hackathon Directors and Evaluators.</p></div><div class="flex items-center gap-space-lg font-label-md text-label-md text-fog"><a class="hover:text-lumen-cream transition-colors" href="#">Evaluation Rubrics</a><a class="hover:text-lumen-cream transition-colors" href="#">Jury Codex</a><a class="hover:text-lumen-cream transition-colors" href="#">Deliberation Arena</a><a class="hover:text-lumen-cream transition-colors" href="#">System Architecture</a></div></div></footer></body></html>

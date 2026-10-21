@@ -1,0 +1,276 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pure-white: #ffffff;
+  --color-secondary-container: #afefe2;
+  --color-outline-variant: #ccc4cd;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-bright: #fcf9f8;
+  --color-surface-container-high: #eae7e7;
+  --color-on-primary-fixed: #251432;
+  --color-secondary: #29685f;
+  --color-on-tertiary-fixed: #2c1600;
+  --color-surface-container-highest: #e5e2e1;
+  --color-on-error-container: #93000a;
+  --color-on-secondary-fixed-variant: #055047;
+  --color-on-primary-fixed-variant: #524060;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-fixed-variant: #683c00;
+  --color-tertiary-container: #ffd9b6;
+  --color-on-error: #ffffff;
+  --color-charcoal: #222222;
+  --color-on-secondary-fixed: #00201c;
+  --color-on-primary: #ffffff;
+  --color-inverse-on-surface: #f3f0ef;
+  --color-error: #ba1a1a;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-fixed: #afefe2;
+  --color-fog: #8a8a80;
+  --color-surface: #fcf9f8;
+  --color-outline: #7c757d;
+  --color-on-surface: #1c1b1b;
+  --color-tertiary-fixed: #ffdcbd;
+  --color-surface-variant: #e5e2e1;
+  --color-inverse-surface: #313030;
+  --color-background: #fcf9f8;
+  --color-secondary-fixed-dim: #94d2c6;
+  --color-primary-container: #f0d7ff;
+  --color-on-secondary-container: #306e65;
+  --color-on-primary-container: #6f5b7d;
+  --color-primary-fixed: #f2daff;
+  --color-tertiary: #8a5100;
+  --color-surface-container: #f0eded;
+  --color-primary-fixed-dim: #d6bee5;
+  --color-tertiary-fixed-dim: #ffb86d;
+  --color-lumen-stone: #e4e4d0;
+  --color-inverse-primary: #d6bee5;
+  --color-lumen-cream: #ffffeb;
+  --color-on-tertiary-container: #905500;
+  --color-on-background: #1c1b1b;
+  --color-surface-dim: #dcd9d9;
+  --color-error-container: #ffdad6;
+  --color-on-surface-variant: #4a454c;
+  --color-on-secondary: #ffffff;
+  --color-surface-tint: #6a5778;
+  --color-primary: #6a5778;
+
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-margin: 2.5rem;
+  --spacing-margin-mobile: 1rem;
+  --spacing-space-xs: 0.5rem;
+  --spacing-space-sm: 1rem;
+  --spacing-space-md: 1.5rem;
+  --spacing-space-lg: 2rem;
+  --spacing-space-xl: 3.5rem;
+
+  --font-body-base: "Plus Jakarta Sans", sans-serif;
+  --font-body-base-bold: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-subheading: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Plus Jakarta Sans", sans-serif;
+  --font-label-sm: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "EB Garamond", serif;
+  --font-headline-sm: "EB Garamond", serif;
+  --font-headline-lg: "EB Garamond", serif;
+  --font-headline-lg-mobile: "EB Garamond", serif;
+  --font-headline-md-mobile: "EB Garamond", serif;
+  --font-display: "EB Garamond", serif;
+  --font-display-mobile: "EB Garamond", serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Explicit Typography Utilities Matching Design System */
+.font-headline-lg {
+  font-family: "EB Garamond", serif;
+}
+.text-headline-lg {
+  font-size: 64px;
+  line-height: 61px;
+  letter-spacing: -1.92px;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .text-headline-lg {
+    font-size: 38px;
+    line-height: 42px;
+    letter-spacing: -1px;
+  }
+}
+
+.font-headline-md {
+  font-family: "EB Garamond", serif;
+}
+.text-headline-md {
+  font-size: 48px;
+  line-height: 46px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .text-headline-md {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.font-headline-sm {
+  font-family: "EB Garamond", serif;
+}
+.text-headline-sm {
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: -0.96px;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .text-headline-sm {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+.font-body-base {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-body-base {
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+
+.font-body-base-bold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+}
+.text-body-base-bold {
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-body-lg {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .text-body-lg {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.font-label-md {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-label-md {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+
+.font-label-sm {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-label-sm {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+
+.font-subheading {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-subheading {
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+}
+
+/* Explicit Spacing Utilities */
+.px-gutter {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (max-width: 640px) {
+  .px-gutter {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.gap-gutter {
+  gap: 1.5rem;
+}
+.gap-space-xs {
+  gap: 0.5rem;
+}
+.gap-space-sm {
+  gap: 1rem;
+}
+.gap-space-md {
+  gap: 1.5rem;
+}
+.gap-space-lg {
+  gap: 2rem;
+}
+.gap-space-xl {
+  gap: 3.5rem;
+}
+@media (max-width: 768px) {
+  .gap-space-xl {
+    gap: 2rem;
+  }
+}
+
+.p-space-md {
+  padding: 1.5rem;
+}
+.px-space-md {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-space-lg {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.py-space-xl {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.pb-space-sm {
+  padding-bottom: 1rem;
+}
+.pb-space-xs {
+  padding-bottom: 0.5rem;
+}
+.pt-space-lg {
+  padding-top: 2rem;
+}
+.mb-space-md {
+  margin-bottom: 1.5rem;
+}

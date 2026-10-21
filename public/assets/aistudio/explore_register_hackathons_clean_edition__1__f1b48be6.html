@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#ffdcbd", "surface-container": "#f0eded", "inverse-surface": "#313030", "on-surface-variant": "#4a454c", "outline-variant": "#ccc4cd", "on-background": "#1c1b1b", "secondary-fixed-dim": "#94d2c6", "tertiary": "#8a5100", "on-primary-fixed": "#251432", "on-tertiary": "#ffffff", "pure-white": "#ffffff", "fog": "#8a8a80", "on-error": "#ffffff", "surface-container-highest": "#e5e2e1", "on-primary-container": "#6f5b7d", "on-primary": "#ffffff", "surface-bright": "#fcf9f8", "on-surface": "#1c1b1b", "on-secondary": "#ffffff", "tertiary-container": "#ffd9b6", "tertiary-fixed-dim": "#ffb86d", "surface-container-low": "#f6f3f2", "lumen-stone": "#e4e4d0", "primary-fixed-dim": "#d6bee5", "secondary": "#29685f", "inverse-primary": "#d6bee5", "on-primary-fixed-variant": "#524060", "primary-container": "#f0d7ff", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "surface-variant": "#e5e2e1", "on-error-container": "#93000a", "on-tertiary-container": "#905500", "on-secondary-fixed": "#00201c", "on-tertiary-fixed": "#2c1600", "secondary-container": "#afefe2", "lumen-cream": "#ffffeb", "outline": "#7c757d", "surface-container-high": "#eae7e7", "inverse-on-surface": "#f3f0ef", "surface-dim": "dcd9d9", "charcoal": "#222222", "secondary-fixed": "#afefe2", "primary-fixed": "#f2daff", "error": "#ba1a1a", "on-secondary-container": "#306e65", "on-secondary-fixed-variant": "#055047", "surface-tint": "#6a5778", "on-tertiary-fixed-variant": "#683c00", "surface": "#fcf9f8", "primary": "#6a5778", "background": "#fcf9f8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "2.5rem", "space-lg": "2rem", "gutter-mobile": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-xs": "0.5rem", "space-sm": "1rem", "space-md": "1.5rem", "space-xl": "3.5rem" }, "fontFamily": { "subheading": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "display-mobile": [ "EB Garamond" ], "body-base": [ "Plus Jakarta Sans" ], "headline-md": [ "EB Garamond" ], "headline-sm": [ "EB Garamond" ], "display": [ "EB Garamond" ], "body-base-bold": [ "Plus Jakarta Sans" ], "headline-lg": [ "EB Garamond" ], "body-lg": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "EB Garamond" ], "headline-md-mobile": [ "EB Garamond" ] }, "fontSize": { "subheading": [ "24px", { "lineHeight": "31px", "letterSpacing": "-0.2px", "fontWeight": "500" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.4px", "fontWeight": "600" } ], "display-mobile": [ "56px", { "lineHeight": "54px", "letterSpacing": "-1.5px", "fontWeight": "400" } ], "body-base": [ "16px", { "lineHeight": "21px", "letterSpacing": "0px", "fontWeight": "400" } ], "headline-md": [ "48px", { "lineHeight": "46px", "letterSpacing": "-0.5px", "fontWeight": "400" } ], "headline-sm": [ "32px", { "lineHeight": "41px", "letterSpacing": "-0.96px", "fontWeight": "400" } ], "display": [ "120px", { "lineHeight": "102px", "letterSpacing": "-3.6px", "fontWeight": "400" } ], "body-base-bold": [ "16px", { "lineHeight": "21px", "letterSpacing": "0px", "fontWeight": "600" } ], "headline-lg": [ "64px", { "lineHeight": "61px", "letterSpacing": "-1.92px", "fontWeight": "400" } ], "body-lg": [ "20px", { "lineHeight": "26px", "letterSpacing": "0px", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "18px", "letterSpacing": "0px", "fontWeight": "500" } ], "headline-lg-mobile": [ "40px", { "lineHeight": "42px", "letterSpacing": "-1px", "fontWeight": "400" } ], "headline-md-mobile": [ "32px", { "lineHeight": "36px", "letterSpacing": "-0.5px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-lumen-cream text-on-surface font-body-base"><header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center pt-space-xs px-margin"><div class="h-20 w-full max-w-[1200px] bg-surface-bright/95 backdrop-blur-md rounded-full px-space-md flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center overflow-hidden"><img alt="Mango Mascot" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UT380eD2f4DQy2PRL7xWoutcO_zEzfLb96LbO8SE7gnXA6YR7chD3hRsdWrIFIfHezVfQuVPuf7ljeARndNmxdWm6Wu5Z_umNLLw4E5qv7h6jGHSd_EOuBEx3uDeJtfnzIcFFTgCtm55Z-2o1kuxsRwzAg0kf5-VrZcqNY10Rqh1Hkn3kD6NCq0dRru1ToLGHdDMLzmJfJrFwM6px3-bLaN2hMSMRIBT1FwTSPRTHLha2BjOWdwF-uUm88uhEuqnFkQ4Ux_bWCCuQ"/></div><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight ml-space-xs">Mango</span></div><nav class="hidden lg:flex items-center gap-space-xs p-1" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md rounded-full"><a aria-current="page" class="px-space-sm py-space-xs transition-all bg-primary-container text-on-primary-container font-label-md text-label-md rounded-full" data-path="explore-hackathons" href="#">Explore Hackathons</a><a class="px-space-sm py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="host-hackathon" href="#">Host Hackathon</a><a class="px-space-sm py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="my-registrations" href="#">My Registrations</a><a class="px-space-sm py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="leaderboard" href="#">Leaderboard</a></nav><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center bg-surface-container-low rounded-full px-space-sm py-space-xs"><span class="material-symbols-outlined text-outline text-body-base mr-space-xs">search</span><input class="bg-transparent border-0 outline-none text-on-surface font-label-md text-label-md placeholder:text-outline w-36 focus:w-48 transition-all" placeholder="Search tracks, bounties..." type="text"/></div><button class="bg-primary-container text-on-primary-fixed font-body-base-bold text-label-md px-space-md py-space-xs rounded-full hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all">Join Discord</button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UT380eD2f4DQy2PRL7xWoutcO_zEzfLb96LbO8SE7gnXA6YR7chD3hRsdWrIFIfHezVfQuVPuf7ljeARndNmxdWm6Wu5Z_umNLLw4E5qv7h6jGHSd_EOuBEx3uDeJtfnzIcFFTgCtm55Z-2o1kuxsRwzAg0kf5-VrZcqNY10Rqh1Hkn3kD6NCq0dRru1ToLGHdDMLzmJfJrFwM6px3-bLaN2hMSMRIBT1FwTSPRTHLha2BjOWdwF-uUm88uhEuqnFkQ4Ux_bWCCuQ"/></div></div></div></header><main class="w-full max-w-[1200px] mx-auto pt-20 px-margin bg-lumen-cream"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Editorial Header -->
+<section class="w-full pt-space-md pb-space-lg flex flex-col items-start gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-fixed-variant">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Discovery &amp; Compete • Mango Network</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between w-full gap-space-md">
+<div class="max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-none">
+          Where builders unite &amp; ship the future.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs max-w-2xl">
+          Explore premier global engineering sprints, track verified bounties, or orchestrate high-velocity tournaments with automated rubrics.
+        </p>
+</div>
+<!-- Live Global Ticker Dock -->
+<div class="flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-low">
+<div class="flex -space-x-2">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Portrait of an active AI engineer wearing headphones smiling in a sunlit lab" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSa6dsRJzoDOAlmAxMljeBd5JREu4zkqH-HnNgXlAuKu-UBhCGWOoIJ2n8pB0ib6akk4jbRcLgUM3szk1I2xsnb18RqtfKfpqs88nFwoJvX6r5hYpLbtYuy5255H0X3JHVNdGfITV1wzSc7CB0NSLYJBDtKsFKfDruFaSKOV_V-6qbwO3Whz10622aB9i0qmuqTPQSFHDsdyaGClJX_cIX9PETVbNJ-11apre9zOeRdnJ8aA4SH6XVRQ"/>
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Portrait of a female systems developer working on dual monitors in San Francisco studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Yaet6bAE8CtxYFl4fiJGFaPwTN-axgZuaQOf1HJZeDn8ZAB5sKMr8UMtfiwpT_5EB9dVPyeGvqnW2zQWvdxs2jIW_qfOPPu-3SdKLVxQtP_1CrVLPYLxKPDtz6BGbh7HzQgQqIzCpaZj8Js0R_W3mIEeipAfopcImKfsUuTSISlvqTusBXFPFJCIElgMXHa6wqCWKoi-p37MTntOtIKJK02gQg627I3D_oxNQ6W0vsOOotY0dMya0w"/>
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Portrait of an open source contributor in a minimalist concrete loft setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHFODE8PLgRQF3C13p-ohSc32s9WFn93H5ZYSuyHxGx6D2OwIBONKHtwwyOPMYaT2LAVy_lVSH4wBozX5tN-htVIhkKJgNWnd-QR62__dURX6viENFa87lP56RKzD-apuvr6rJFV-x2BlqMvnEc1WHBrLH9CKTsF-o-Fmhp6aUPAuz45IQ9LywQStXL4JDEIO55bsHlkLHzIYzZXcsgXH63aUXy6XpDr2HrSLINNMljU8B_iHo_Y5Zxw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-body-base-bold leading-tight">1,840 Hackers</span>
+<span class="font-label-sm text-label-sm text-fog leading-none">Building in 14 active arenas</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Dual Primary Action Chambers (Hero Modules) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter my-space-sm">
+<!-- Box 1: Join as Hacker -->
+<div class="lg:col-span-7 rounded-[32px] bg-secondary-fixed/20 p-space-lg flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-pure-white text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase font-body-base-bold tracking-wide">12 Hackathons Live Now</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container px-space-xs py-1 rounded">Hacker Portal</span>
+</div>
+<div class="my-space-md max-w-xl">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-xs">
+          Join an Active Hackathon
+        </h2>
+<p class="font-body-base text-body-base text-on-surface-variant">
+          Find high-stakes sprints, match with dream teammates via semantic skill matching, submit multimodal voice/code demos, and access direct mentor deliberation rooms.
+        </p>
+<!-- Skill & Track Tags -->
+<div class="flex flex-wrap gap-1.5 mt-space-md">
+<span class="px-space-xs py-1 rounded-full bg-pure-white font-label-sm text-label-sm text-on-surface">AI Agents</span>
+<span class="px-space-xs py-1 rounded-full bg-pure-white font-label-sm text-label-sm text-on-surface">ZK &amp; Rollups</span>
+<span class="px-space-xs py-1 rounded-full bg-pure-white font-label-sm text-label-sm text-on-surface">BioTech</span>
+<span class="px-space-xs py-1 rounded-full bg-pure-white font-label-sm text-label-sm text-on-surface">Embodied Robotics</span>
+<span class="px-space-xs py-1 rounded-full bg-pure-white font-label-sm text-label-sm text-on-surface">Voice UX</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary-fixed font-body-base-bold text-body-base px-space-md py-space-sm rounded-xl hover:bg-primary-fixed-dim transition-transform duration-150 hover:-translate-y-0.5" href="#explore-grid">
+<span>Find Ongoing Hackathons</span>
+<span class="material-symbols-outlined text-body-base">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-on-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined text-label-md">group_add</span>
+<span>Quick Teammate Matcher</span>
+</a>
+</div>
+</div>
+<!-- Box 2: Host / Register (Coordinator Engine) -->
+<div class="lg:col-span-5 rounded-[32px] bg-tertiary-container/30 p-space-lg flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-pure-white text-tertiary">
+<span class="material-symbols-outlined text-label-sm">bolt</span>
+<span class="font-label-sm text-label-sm uppercase font-body-base-bold tracking-wide">Mango OS Engine</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed px-space-xs py-1 rounded">Chamber Protocol</span>
+</div>
+<div class="my-space-md">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-xs">
+          Host Your Hackathon
+        </h2>
+<p class="font-body-base text-body-base text-on-surface-variant">
+          Deploy the dual coordinator &amp; judge command engine. Automated telemetry, voice rubric consensus, instant mentor queue management, and zero spreadsheet chaos.
+        </p>
+<!-- Mini Feature Metric List -->
+<div class="grid grid-cols-2 gap-space-xs mt-space-md">
+<div class="p-space-xs bg-pure-white/80 rounded-lg">
+<span class="block font-headline-sm text-headline-sm text-tertiary">4×</span>
+<span class="font-label-sm text-label-sm text-fog">Deliberation Speed</span>
+</div>
+<div class="p-space-xs bg-pure-white/80 rounded-lg">
+<span class="block font-headline-sm text-headline-sm text-on-surface">Voice</span>
+<span class="font-label-sm text-label-sm text-fog">Scoring &amp; Transcript</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<button class="inline-flex items-center gap-space-xs bg-tertiary-container text-on-tertiary-fixed font-body-base-bold text-body-base px-space-md py-space-sm rounded-xl hover:bg-tertiary-fixed-dim transition-transform duration-150 hover:-translate-y-0.5">
+<span>Register Hackathon</span>
+<span class="material-symbols-outlined text-body-base">add_circle</span>
+</button>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-tertiary hover:text-on-tertiary-fixed-variant transition-colors">
+<span class="material-symbols-outlined text-label-md">play_circle</span>
+<span>Watch Coordinator Demo</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Filter & Track Selector Bar -->
+<section class="w-full mt-space-lg mb-space-md flex flex-col gap-space-sm" id="explore-grid">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-sm">
+<!-- Search Input Container -->
+<div class="flex-1 flex items-center bg-surface-container-lowest rounded-2xl px-space-md py- space-xs max-w-xl">
+<span class="material-symbols-outlined text-outline text-body-base mr-space-xs">search</span>
+<input class="w-full bg-transparent border-0 outline-none font-label-md text-label-md text-on-surface placeholder:text-outline py-2" placeholder="Search hackathons by track, host, prize pool, or tech stack..." type="text"/>
+<span class="font-label-sm text-label-sm text-fog px-2 py-0.5 bg-surface-container rounded ml-space-xs">⌘K</span>
+</div>
+<!-- Sorting Selectors -->
+<div class="flex items-center gap-space-xs self-end lg:self-center">
+<span class="font-label-sm text-label-sm text-fog">Sort by:</span>
+<div class="relative inline-block">
+<select class="appearance-none bg-surface-container-lowest text-on-surface font-label-md text-label-md pl-space-sm pr-space-lg py-2 rounded-xl border-0 cursor-pointer outline-none">
+<option>Highest Prize Pool</option>
+<option>Submission Deadline</option>
+<option>Most Hacker Interest</option>
+<option>Recently Added</option>
+</select>
+<span class="material-symbols-outlined text-outline text-label-md absolute right-2.5 top-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Filter Pills Horizontal Bar -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
+<button class="px-space-sm py-1.5 rounded-full font-label-md text-label-md bg-inverse-surface text-inverse-on-surface flex items-center gap-1 shrink-0">
+<span>All Sprints</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-variant text-on-surface text-label-sm">28</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 shrink-0">
+<span>Closing Soon</span>
+<span class="font-label-sm text-label-sm text-fog">4</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 shrink-0">
+<span>GenAI &amp; Voice Agents</span>
+<span class="font-label-sm text-label-sm text-fog">11</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 shrink-0">
+<span>Decentralized Systems</span>
+<span class="font-label-sm text-label-sm text-fog">6</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 shrink-0">
+<span>Hardware &amp; Robotics</span>
+<span class="font-label-sm text-label-sm text-fog">4</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 shrink-0">
+<span>BioEngineering</span>
+<span class="font-label-sm text-label-sm text-fog">3</span>
+</button>
+</div>
+</section>
+<!-- Hackathon Poster Cards Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter my-space-md">
+<!-- Card 1: Dark Velvet Chamber Poster (Wispr x Mango) -->
+<article class="rounded-[32px] bg-charcoal text-pure-white p-space-lg flex flex-col justify-between relative overflow-hidden group">
+<!-- Glow ambient accent -->
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-secondary/30 rounded-full blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-1 rounded bg-secondary text-pure-white font-label-sm text-label-sm uppercase tracking-wider">Wispr × Mango Labs</span>
+<span class="font-label-sm text-label-sm text-fog">Chamber #09</span>
+</div>
+<!-- Pulsing Live Indicator -->
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-pure-white/10 text-tertiary-fixed">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-ping"></span>
+<span class="font-label-sm text-label-sm font-body-base-bold">LIVE • 36h Left</span>
+</div>
+</div>
+<div class="mb-space-md">
+<div class="inline-block px-space-sm py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-headline-sm text-headline-sm mb-space-xs">
+            $120,000 Prize Pool
+          </div>
+<h3 class="font-headline-md text-headline-md text-pure-white mt-space-xs leading-tight">
+            Global Voice &amp; Multimodal AI Sprint
+          </h3>
+<p class="font-body-base text-body-base text-fog mt-space-xs">
+            Design real-time speech-to-intent pipelines, local whisper edge runners, and emotional synthesis agents. Evaluated with real-time judge telemetry.
+          </p>
+</div>
+<!-- Metadata Matrix -->
+<div class="grid grid-cols-3 gap-space-xs py-space-sm my-space-sm bg-pure-white/5 rounded-2xl px-space-sm">
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Teams Competing</span>
+<span class="font-body-base-bold text-body-base text-pure-white">142 Active</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Format</span>
+<span class="font-body-base-bold text-body-base text-pure-white">SF &amp; Virtual</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Guest Jurors</span>
+<span class="font-body-base-bold text-body-base text-pure-white">Anthropic / Wispr</span>
+</div>
+</div>
+<!-- Visual representation of judging voice waveforms -->
+<div class="flex items-center justify-between px-space-sm py-2 rounded-xl bg-pure-white/5 my-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-body-base">mic</span>
+<span class="font-label-sm text-label-sm text-fog">Voice Deliberation Feed: Active</span>
+</div>
+<div class="flex items-center gap-1 h-5">
+<span class="w-1 bg-secondary-fixed rounded-full h-3 animate-pulse"></span>
+<span class="w-1 bg-secondary-fixed rounded-full h-5 animate-pulse"></span>
+<span class="w-1 bg-secondary-fixed rounded-full h-2 animate-pulse"></span>
+<span class="w-1 bg-secondary-fixed rounded-full h-4 animate-pulse"></span>
+<span class="w-1 bg-secondary-fixed rounded-full h-1"></span>
+</div>
+</div>
+</div>
+<!-- Action Strip -->
+<div class="flex items-center gap-space-xs pt-space-md">
+<button class="flex-1 bg-primary-container text-on-primary-fixed font-body-base-bold text-body-base py-space-sm rounded-xl hover:bg-primary-fixed-dim transition-colors text-center">
+          Join Hackathon Now
+        </button>
+<button aria-label="Bookmark Hackathon" class="w-12 h-12 rounded-xl bg-pure-white/10 hover:bg-pure-white/20 flex items-center justify-center text-pure-white transition-colors">
+<span class="material-symbols-outlined text-body-base">bookmark_border</span>
+</button>
+<button aria-label="Share Hackathon" class="w-12 h-12 rounded-xl bg-pure-white/10 hover:bg-pure-white/20 flex items-center justify-center text-pure-white transition-colors">
+<span class="material-symbols-outlined text-body-base">ios_share</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Autonomous Agents & Robotics (Stanford & MIT Guild) -->
+<article class="rounded-[32px] bg-surface-container-lowest p-space-lg flex flex-col justify-between relative group">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">MIT &amp; Stanford Guild</span>
+<span class="font-label-sm text-label-sm text-fog">Physical AI Track</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-body-base-bold bg-secondary-fixed/30 px-space-sm py-1 rounded-full">
+            Starts in 4 Days
+          </span>
+</div>
+<div class="mb-space-md">
+<div class="inline-block px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-headline-sm text-headline-sm mb-space-xs">
+            $85,000 + Jetson Grants
+          </div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-space-xs leading-tight">
+            Autonomous Agents &amp; Robotics Invitational
+          </h3>
+<p class="font-body-base text-body-base text-on-surface-variant mt-space-xs">
+            Tackle vision-language-action (VLA) models, ROS2 micro-controllers, and autonomous spatial drone mapping with hardware sandbox access.
+          </p>
+</div>
+<!-- Metrics Strip -->
+<div class="grid grid-cols-3 gap-space-xs py-space-sm my-space-sm bg-surface-container-low rounded-2xl px-space-sm">
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Accepted Hackers</span>
+<span class="font-body-base-bold text-body-base text-on-surface">480 Builders</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Hardware Lab</span>
+<span class="font-body-base-bold text-body-base text-on-surface">Nvidia Orin Kits</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Rubric Key</span>
+<span class="font-body-base-bold text-body-base text-on-surface">Sim2Real Latency</span>
+</div>
+</div>
+<!-- Track Tags -->
+<div class="flex flex-wrap gap-1.5 my-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Embodied AI</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Drone Swarms</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Local SLAM</span>
+</div>
+</div>
+<!-- Action Strip -->
+<div class="flex items-center gap-space-xs pt-space-md">
+<button class="flex-1 bg-surface-container-high text-on-surface font-body-base-bold text-body-base py-space-sm rounded-xl hover:bg-surface-container-highest transition-colors text-center">
+          Register Team
+        </button>
+<button aria-label="Bookmark Hackathon" class="w-12 h-12 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors">
+<span class="material-symbols-outlined text-body-base">bookmark_border</span>
+</button>
+<button aria-label="Share Hackathon" class="w-12 h-12 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors">
+<span class="material-symbols-outlined text-body-base">ios_share</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Soft Lavender Chamber (ZK & Decentralized Infra) -->
+<article class="rounded-[32px] bg-primary-fixed/25 p-space-lg flex flex-col justify-between relative group">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider">ETHGlobal • Paradigm</span>
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant">Privacy Track</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container font-body-base-bold bg-primary-container px-space-sm py-1 rounded-full">
+            Submissions Open
+          </span>
+</div>
+<div class="mb-space-md">
+<div class="inline-block px-space-sm py-1 rounded-full bg-primary-container text-on-primary-fixed font-headline-sm text-headline-sm mb-space-xs">
+            $150,000 in Grants
+          </div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-space-xs leading-tight">
+            Zero-Knowledge &amp; Decentralized Infra Summit
+          </h3>
+<p class="font-body-base text-body-base text-on-surface-variant mt-space-xs">
+            Construct recursive zk-SNARK circuits, sovereign rollups, verifiable credential vaults, and censorship-resistant data availability layers.
+          </p>
+</div>
+<!-- Metrics Strip -->
+<div class="grid grid-cols-3 gap-space-xs py-space-sm my-space-sm bg-pure-white/70 rounded-2xl px-space-sm">
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Format</span>
+<span class="font-body-base-bold text-body-base text-on-surface">Fully Remote</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Hiring Partners</span>
+<span class="font-body-base-bold text-body-base text-on-surface">18 Venture Funds</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Verification</span>
+<span class="font-body-base-bold text-body-base text-on-surface">On-chain Proof</span>
+</div>
+</div>
+<!-- Track Tags -->
+<div class="flex flex-wrap gap-1.5 my-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-pure-white text-on-surface font-label-sm text-label-sm">Circom</span>
+<span class="px-space-xs py-0.5 rounded bg-pure-white text-on-surface font-label-sm text-label-sm">Halo2</span>
+<span class="px-space-xs py-0.5 rounded bg-pure-white text-on-surface font-label-sm text-label-sm">Rust DA</span>
+</div>
+</div>
+<!-- Action Strip -->
+<div class="flex items-center gap-space-xs pt-space-md">
+<button class="flex-1 bg-primary text-on-primary font-body-base-bold text-body-base py-space-sm rounded-xl hover:bg-on-surface transition-colors text-center">
+          Join Hackathon
+        </button>
+<button aria-label="Bookmark Hackathon" class="w-12 h-12 rounded-xl bg-pure-white/80 hover:bg-pure-white flex items-center justify-center text-on-surface transition-colors">
+<span class="material-symbols-outlined text-body-base">bookmark_border</span>
+</button>
+<button aria-label="Share Hackathon" class="w-12 h-12 rounded-xl bg-pure-white/80 hover:bg-pure-white flex items-center justify-center text-on-surface transition-colors">
+<span class="material-symbols-outlined text-body-base">ios_share</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Light Sage BioTech & Longevity Chamber -->
+<article class="rounded-[32px] bg-secondary-fixed-dim/20 p-space-lg flex flex-col justify-between relative group">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-1 rounded bg-secondary text-pure-white font-label-sm text-label-sm uppercase tracking-wider">Arc Institute • YC Bio</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Applied Genomics</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-body-base-bold bg-tertiary-fixed px-space-sm py-1 rounded-full">
+            Early Bird Open
+          </span>
+</div>
+<div class="mb-space-md">
+<div class="inline-block px-space-sm py-1 rounded-full bg-tertiary-container text-on-tertiary-fixed font-headline-sm text-headline-sm mb-space-xs">
+            $60,000 Prize Pool
+          </div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-space-xs leading-tight">
+            Next-Gen BioEngineering &amp; Longevity Hack
+          </h3>
+<p class="font-body-base text-body-base text-on-surface-variant mt-space-xs">
+            Harness foundation models for de-novo protein generation, accelerated CRISPR target scoring, and biological longevity biomarker analysis.
+          </p>
+</div>
+<!-- Metrics Strip -->
+<div class="grid grid-cols-3 gap-space-xs py-space-sm my-space-sm bg-pure-white/70 rounded-2xl px-space-sm">
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Location</span>
+<span class="font-body-base-bold text-body-base text-on-surface">Kendall Sq &amp; Hybrid</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Compute</span>
+<span class="font-body-base-bold text-body-base text-on-surface">H100 Node Cluster</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-fog">Mentors</span>
+<span class="font-body-base-bold text-body-base text-on-surface">Computational Bio PhDs</span>
+</div>
+</div>
+<!-- Track Tags -->
+<div class="flex flex-wrap gap-1.5 my-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-pure-white text-on-surface font-label-sm text-label-sm">ESMFold</span>
+<span class="px-space-xs py-0.5 rounded bg-pure-white text-on-surface font-label-sm text-label-sm">RNA-seq</span>
+<span class="px-space-xs py-0.5 rounded bg-pure-white text-on-surface font-label-sm text-label-sm">Synthetic Bio</span>
+</div>
+</div>
+<!-- Action Strip -->
+<div class="flex items-center gap-space-xs pt-space-md">
+<button class="flex-1 bg-on-surface text-pure-white font-body-base-bold text-body-base py-space-sm rounded-xl hover:bg-charcoal transition-colors text-center">
+          Join Sprint
+        </button>
+<button aria-label="Bookmark Hackathon" class="w-12 h-12 rounded-xl bg-pure-white/80 hover:bg-pure-white flex items-center justify-center text-on-surface transition-colors">
+<span class="material-symbols-outlined text-body-base">bookmark_border</span>
+</button>
+<button aria-label="Share Hackathon" class="w-12 h-12 rounded-xl bg-pure-white/80 hover:bg-pure-white flex items-center justify-center text-on-surface transition-colors">
+<span class="material-symbols-outlined text-body-base">ios_share</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Live Judging Arena Preview (Editorial Chamber) -->
+<section class="my-space-lg p-space-lg rounded-[32px] bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-headline-sm">gavel</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Deliberation Protocol Live</h4>
+<p class="font-body-base text-body-base text-on-surface-variant max-w-lg">
+          Judge evaluations are scored via cryptographic consensus. Direct voice transcript memos and weighted rubric scoring prevent review bias.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-fog">Coordinator Status: Active</span>
+<button class="px-space-md py-space-xs rounded-xl bg-pure-white text-on-surface font-body-base-bold text-label-md hover:bg-surface-container-high transition-colors">
+        Read Judging Matrix
+      </button>
+</div>
+</section>
+<!-- Quick Stats Footer Banner -->
+<section class="w-full mt-space-md pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>Trusted by 18,000+ builders worldwide • 100% automated judging verification</span>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<a class="hover:text-on-surface transition-colors" href="#">Organizers Handbook</a>
+<span>•</span>
+<a class="hover:text-on-surface transition-colors" href="#">Bounty Escrow Policy</a>
+<span>•</span>
+<a class="hover:text-on-surface transition-colors" href="#">API &amp; Webhooks</a>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl py-space-lg"><div class="max-w-[1200px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">Mango</span><span class="font-label-sm text-label-sm text-fog">© 2025 Mango Operations. Deliberate editorial engineering.</span></div><div class="flex items-center gap-space-md font-label-md text-label-md text-on-surface-variant"><a class="hover:text-on-surface transition-colors" href="#">Chamber Protocol</a><a class="hover:text-on-surface transition-colors" href="#">Judging Matrix</a><a class="hover:text-on-surface transition-colors" href="#">Terms</a></div></div></footer></body></html>

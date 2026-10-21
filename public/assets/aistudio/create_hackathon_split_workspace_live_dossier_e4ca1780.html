@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary":"#8a5100","on-tertiary-fixed":"#2c1600","inverse-on-surface":"#f3f0ef","outline-variant":"#ccc4cd","primary-container":"#f0d7ff","lumen-stone":"#e4e4d0","primary":"#6a5778","on-secondary":"#ffffff","tertiary-container":"#ffd9b6","on-primary-fixed-variant":"#524060","secondary":"#29685f","surface-container-high":"#eae7e7","on-secondary-container":"#306e65","surface-container-low":"#f6f3f2","inverse-primary":"#d6bee5","secondary-fixed-dim":"#94d2c6","surface-dim":"#dcd9d9","fog":"#8a8a80","surface-container-highest":"#e5e2e1","error-container":"#ffdad6","on-surface":"#1c1b1b","on-primary-fixed":"#251432","surface":"#fcf9f8","tertiary-fixed-dim":"#ffb86d","secondary-fixed":"#afefe2","on-error-container":"#93000a","error":"#ba1a1a","on-secondary-fixed-variant":"#055047","on-background":"#1c1b1b","on-secondary-fixed":"#00201c","surface-container":"#f0eded","charcoal":"#222222","background":"#fcf9f8","lumen-cream":"#ffffeb","on-tertiary-container":"#905500","on-primary":"#ffffff","secondary-container":"#afefe2","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","outline":"#7c757d","primary-fixed":"#f2daff","on-surface-variant":"#4a454c","surface-variant":"#e5e2e1","pure-white":"#ffffff","surface-tint":"#6a5778","inverse-surface":"#313030","on-tertiary-fixed-variant":"#683c00","surface-bright":"#fcf9f8","tertiary-fixed":"#ffdcbd","on-error":"#ffffff","primary-fixed-dim":"#d6bee5","on-primary-container":"#6f5b7d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","space-xl":"3.5rem","space-md":"1.5rem","margin":"2.5rem","space-sm":"1rem","space-xs":"0.5rem","margin-mobile":"1rem","gutter":"1.5rem","space-lg":"2rem"},"fontFamily":{"headline-sm":["EB Garamond"],"body-base":["Plus Jakarta Sans"],"headline-lg":["EB Garamond"],"subheading":["Plus Jakarta Sans"],"headline-md-mobile":["EB Garamond"],"label-sm":["Plus Jakarta Sans"],"display":["EB Garamond"],"label-md":["Plus Jakarta Sans"],"headline-md":["EB Garamond"],"display-mobile":["EB Garamond"],"headline-lg-mobile":["EB Garamond"],"body-lg":["Plus Jakarta Sans"],"body-base-bold":["Plus Jakarta Sans"]},"fontSize":{"headline-sm":["32px",{"lineHeight":"41px","letterSpacing":"-0.96px","fontWeight":"400"}],"body-base":["16px",{"lineHeight":"21px","letterSpacing":"0px","fontWeight":"400"}],"headline-lg":["64px",{"lineHeight":"61px","letterSpacing":"-1.92px","fontWeight":"400"}],"subheading":["24px",{"lineHeight":"31px","letterSpacing":"-0.2px","fontWeight":"500"}],"headline-md-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.5px","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.4px","fontWeight":"600"}],"display":["120px",{"lineHeight":"102px","letterSpacing":"-3.6px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"18px","letterSpacing":"0px","fontWeight":"500"}],"headline-md":["48px",{"lineHeight":"46px","letterSpacing":"-0.5px","fontWeight":"400"}],"display-mobile":["56px",{"lineHeight":"54px","letterSpacing":"-1.5px","fontWeight":"400"}],"headline-lg-mobile":["40px",{"lineHeight":"42px","letterSpacing":"-1px","fontWeight":"400"}],"body-lg":["20px",{"lineHeight":"26px","letterSpacing":"0px","fontWeight":"400"}],"body-base-bold":["16px",{"lineHeight":"21px","letterSpacing":"0px","fontWeight":"600"}]}}}}</script></head><body class="bg-lumen-cream font-body-base text-charcoal min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-lumen-cream/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-gutter-mobile lg:px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><img alt="Mango Mascot" class="w-9 h-9 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UT380eD2f4DQy2PRL7xWoutcO_zEzfLb96LbO8SE7gnXA6YR7chD3hRsdWrIFIfHezVfQuVPuf7ljeARndNmxdWm6Wu5Z_umNLLw4E5qv7h6jGHSd_EOuBEx3uDeJtfnzIcFFTgCtm55Z-2o1kuxsRwzAg0kf5-VrZcqNY10Rqh1Hkn3kD6NCq0dRru1ToLGHdDMLzmJfJrFwM6px3-bLaN2hMSMRIBT1FwTSPRTHLha2BjOWdwF-uUm88uhEuqnFkQ4Ux_bWCCuQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm leading-none text-charcoal tracking-tight">Mango</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-fog mt-0.5">Hackathon Setup Studio</span></div></div><div class="hidden xl:block h-6 w-px bg-outline-variant/60"></div><nav class="hidden lg:flex items-center gap-space-md text-fog" data-active-classes="text-charcoal font-body-base-bold"><a aria-current="page" class="transition-colors text-charcoal font-body-base-bold" data-path="overview-and-basics" href="#">01. Overview</a><span class="text-outline-variant text-label-sm">/</span><a class="font-label-md text-label-md text-fog hover:text-charcoal transition-colors" data-path="tracks-and-rubrics" href="#">02. Tracks &amp; Rubrics</a><span class="text-outline-variant text-label-sm">/</span><a class="font-label-md text-label-md text-fog hover:text-charcoal transition-colors" data-path="judges-and-mentors" href="#">03. Reviewers</a><span class="text-outline-variant text-label-sm">/</span><a class="font-label-md text-label-md text-fog hover:text-charcoal transition-colors" data-path="schedule-and-rules" href="#">04. Schedule</a></nav></div><div class="flex items-center gap-space-sm"><button class="inline-flex items-center justify-center px-space-sm py-2 rounded-xl bg-lumen-stone text-charcoal font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">Save Draft</button><div class="flex items-center pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UT380eD2f4DQy2PRL7xWoutcO_zEzfLb96LbO8SE7gnXA6YR7chD3hRsdWrIFIfHezVfQuVPuf7ljeARndNmxdWm6Wu5Z_umNLLw4E5qv7h6jGHSd_EOuBEx3uDeJtfnzIcFFTgCtm55Z-2o1kuxsRwzAg0kf5-VrZcqNY10Rqh1Hkn3kD6NCq0dRru1ToLGHdDMLzmJfJrFwM6px3-bLaN2hMSMRIBT1FwTSPRTHLha2BjOWdwF-uUm88uhEuqnFkQ4Ux_bWCCuQ"/></div></div></div></header><main class="w-full pt-20 bg-lumen-cream"><div class="flex flex-col w-full">
+<div class="max-w-[1200px] w-full mx-auto px-gutter-mobile lg:px-margin py-space-md lg:py-space-xl">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Chamber II • Architectural Ingestion</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-charcoal tracking-tight">Deploy New Event.</h1>
+<p class="font-body-base text-body-base text-fog max-w-xl">
+          Establish cryptographic stakes, evaluation parameters, and sovereign juror roles. Changes render synchronously in the live dossier preview.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs bg-lumen-stone px-space-sm py-2 rounded-full self-start lg:self-auto">
+<span class="material-symbols-outlined text-charcoal text-[18px]">verified_user</span>
+<span class="font-label-md text-label-md text-charcoal">Session Vault: Active</span>
+<span class="text-fog">/</span>
+<span class="font-label-sm text-label-sm text-fog uppercase">Draft #HK-8841</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<section class="flex flex-col gap-space-md">
+<div class="flex items-baseline justify-between">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">01</span>
+<span class="font-body-base-bold text-body-base-bold text-charcoal">Identify your operational role</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary bg-tertiary-container/40 px-2 py-0.5 rounded">Mandatory</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm" id="role-selector">
+<button class="role-card text-left p-space-md rounded-2xl bg-primary-container text-on-surface transition-all" data-role="head" type="button">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-primary text-[28px]">gavel</span>
+<span class="role-radio w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</span>
+</div>
+<div class="mt-space-md">
+<p class="font-body-base-bold text-body-base-bold text-charcoal">Head / Director</p>
+<p class="font-label-md text-label-md text-fog mt-1">Lead signatory, multi-sig escrow hold, full evaluation jurisdiction.</p>
+</div>
+</button>
+<button class="role-card text-left p-space-md rounded-2xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" data-role="core" type="button">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-fog text-[28px]">hub</span>
+<span class="role-radio w-5 h-5 rounded-full bg-outline-variant flex items-center justify-center"></span>
+</div>
+<div class="mt-space-md">
+<p class="font-body-base-bold text-body-base-bold text-charcoal">Core Team Member</p>
+<p class="font-label-md text-label-md text-fog mt-1">Logistics coordinator, mentor dispatch, operational staging.</p>
+</div>
+</button>
+</div>
+</section>
+<section class="flex flex-col gap-space-md bg-surface-container-lowest p-space-lg rounded-3xl">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">02</span>
+<span class="font-body-base-bold text-body-base-bold text-charcoal">Core Event Identity</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md text-charcoal" for="event-title-input">Event Legal Title</label>
+<input class="w-full bg-lumen-cream text-charcoal font-headline-sm text-headline-sm px-space-md py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all" id="event-title-input" type="text" value="Global Autonomous Voice Hackathon"/>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md text-charcoal" for="event-tagline-input">Dossier Purpose / Thesis</label>
+<textarea class="w-full bg-lumen-cream text-charcoal font-body-base text-body-base p-space-md rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all resize-none" id="event-tagline-input" rows="2">Synthesizing next-gen acoustic neural models, low-latency audio pipelines, and edge-native voice intelligence.</textarea>
+</div>
+</section>
+<section class="flex flex-col gap-space-md bg-surface-container-lowest p-space-lg rounded-3xl">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">03</span>
+<span class="font-body-base-bold text-body-base-bold text-charcoal">Venue &amp; Format Coordinates</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="md:col-span-2 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-charcoal" for="event-location-input">Primary Staging Nexus</label>
+<div class="flex items-center gap-2 bg-lumen-cream px-space-md py-3 rounded-xl">
+<span class="material-symbols-outlined text-secondary shrink-0">location_on</span>
+<input class="w-full bg-transparent text-charcoal font-label-md text-label-md focus:outline-none" id="event-location-input" type="text" value="San Francisco, CA &amp; Global Stream (Moscone West)"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-charcoal" for="event-capacity-input">Max Builder Quorum</label>
+<div class="flex items-center gap-2 bg-lumen-cream px-space-md py-3 rounded-xl">
+<span class="material-symbols-outlined text-fog shrink-0">groups</span>
+<input class="w-full bg-transparent text-charcoal font-label-md text-label-md focus:outline-none" id="event-capacity-input" type="text" value="450 In-Person"/>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-fog">Hardware Tiers:</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-semibold">A100 Clusters</span>
+<span class="px-2.5 py-1 rounded-full bg-lumen-stone text-charcoal font-label-sm text-label-sm">Whisper SDKs</span>
+<span class="px-2.5 py-1 rounded-full bg-lumen-stone text-charcoal font-label-sm text-label-sm">WebRTC Relays</span>
+</div>
+</section>
+<section class="flex flex-col gap-space-md bg-surface-container-lowest p-space-lg rounded-3xl">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">04</span>
+<span class="font-body-base-bold text-body-base-bold text-charcoal">Timeline &amp; Deliberation Schedule</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="flex flex-col gap-2 p-space-md rounded-2xl bg-lumen-cream">
+<div class="flex items-center gap-2 text-fog">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+<span class="font-label-sm text-label-sm uppercase">Step 01: Inception</span>
+</div>
+<p class="font-body-base-bold text-body-base-bold text-charcoal">Oct 24, 09:00 PST</p>
+<span class="font-label-md text-label-md text-fog">Keynote &amp; Repo Forking</span>
+</div>
+<div class="flex flex-col gap-2 p-space-md rounded-2xl bg-lumen-cream">
+<div class="flex items-center gap-2 text-fog">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span class="font-label-sm text-label-sm uppercase">Step 02: Ice Freeze</span>
+</div>
+<p class="font-body-base-bold text-body-base-bold text-charcoal">Oct 26, 12:00 PST</p>
+<span class="font-label-md text-label-md text-fog">Commit Hashes Locked</span>
+</div>
+<div class="flex flex-col gap-2 p-space-md rounded-2xl bg-lumen-cream">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+<span class="font-label-sm text-label-sm uppercase">Step 03: Jury Lock</span>
+</div>
+<p class="font-body-base-bold text-body-base-bold text-charcoal">Oct 26, 16:30 PST</p>
+<span class="font-label-md text-label-md text-tertiary">Sovereign Quorum Vote</span>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-md bg-surface-container-lowest p-space-lg rounded-3xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">05</span>
+<span class="font-body-base-bold text-body-base-bold text-charcoal">Confirmed Judges &amp; Mentors</span>
+</div>
+<button class="inline-flex items-center gap-1.5 px-space-sm py-2 rounded-xl bg-lumen-cream hover:bg-lumen-stone text-charcoal font-label-md text-label-md transition-colors" id="add-judge-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Juror</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm" id="judges-list">
+<div class="flex items-center justify-between p-space-sm rounded-2xl bg-lumen-cream">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-body-base-bold text-body-base-bold">
+                  SC
+                </div>
+<div class="flex flex-col">
+<span class="font-body-base-bold text-body-base-bold text-charcoal leading-snug">Sarah Chen</span>
+<span class="font-label-sm text-label-sm text-fog">LLM Infra Lead • Matrix Track</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant hover:text-error cursor-pointer text-[20px]">remove_circle_outline</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-2xl bg-lumen-cream">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-body-base-bold text-body-base-bold">
+                  DR
+                </div>
+<div class="flex flex-col">
+<span class="font-body-base-bold text-body-base-bold text-charcoal leading-snug">David Ross</span>
+<span class="font-label-sm text-label-sm text-fog">Design Partner • Synthesis Track</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant hover:text-error cursor-pointer text-[20px]">remove_circle_outline</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-2xl bg-lumen-cream">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-body-base-bold text-body-base-bold">
+                  AN
+                </div>
+<div class="flex flex-col">
+<span class="font-body-base-bold text-body-base-bold text-charcoal leading-snug">Anya Ndiaye</span>
+<span class="font-label-sm text-label-sm text-fog">Acoustic Research • Edge Core</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant hover:text-error cursor-pointer text-[20px]">remove_circle_outline</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-2xl bg-lumen-cream">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-inverse-surface text-inverse-on-surface flex items-center justify-center font-body-base-bold text-body-base-bold">
+                  MK
+                </div>
+<div class="flex flex-col">
+<span class="font-body-base-bold text-body-base-bold text-charcoal leading-snug">Mateo Kim</span>
+<span class="font-label-sm text-label-sm text-fog">Security Audit • Protocol lead</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant hover:text-error cursor-pointer text-[20px]">remove_circle_outline</span>
+</div>
+</div>
+</section>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md pb-space-lg">
+<a class="inline-flex items-center gap-2 text-fog hover:text-charcoal font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Return to Gateway</span>
+</a>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-space-md py-3.5 rounded-xl bg-lumen-stone hover:bg-surface-container-high text-charcoal font-body-base-bold text-body-base-bold transition-all text-center" type="button">
+              Validate Schema
+            </button>
+<button class="flex-1 sm:flex-none px-space-lg py-3.5 rounded-xl bg-primary-container text-on-primary-fixed hover:bg-primary-fixed text-center font-body-base-bold text-body-base-bold transition-all flex items-center justify-center gap-2" type="button">
+<span>Publish Hackathon Blueprint</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 lg:sticky lg:top-24 flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-fog font-semibold">Real-Time Dossier Projection</span>
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-secondary bg-secondary-container/60 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Synchronous
+          </span>
+</div>
+<div class="relative bg-charcoal text-lumen-cream rounded-[40px] p-space-lg lg:p-space-xl overflow-hidden shadow-2xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest/10 text-lumen-cream font-label-sm text-label-sm tracking-wider uppercase font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+              Live Preview • Draft
+            </span>
+<span class="font-label-sm text-label-sm text-fog">Edition 2025.1</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed font-bold" id="preview-role-badge">
+              Organized by Head Lead • Sovereign Root
+            </span>
+<h2 class="font-headline-md text-headline-md text-lumen-cream leading-tight" id="preview-event-title">
+              Global Autonomous Voice Hackathon
+            </h2>
+<p class="font-body-base text-body-base text-fog line-clamp-3" id="preview-event-tagline">
+              Synthesizing next-gen acoustic neural models, low-latency audio pipelines, and edge-native voice intelligence.
+            </p>
+</div>
+<div class="flex flex-col gap-2 p-space-md rounded-2xl bg-surface-container-highest/10">
+<div class="flex items-center justify-between text-lumen-cream">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">satellite_alt</span>
+<span class="font-label-md text-label-md truncate max-w-[200px]" id="preview-location">
+                  San Francisco, CA &amp; Global
+                </span>
+</div>
+<span class="font-label-sm text-label-sm text-fog" id="preview-capacity">
+                450 Seats
+              </span>
+</div>
+<div class="h-px bg-outline-variant/20 my-1"></div>
+<div class="flex items-center justify-between text-fog font-label-sm text-label-sm">
+<span>Timeframe: Oct 24 – 26</span>
+<span class="text-tertiary-fixed-dim font-semibold">48h In-Arena Coding</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-fog font-semibold">Juror Roster Preview</span>
+<span class="font-label-sm text-label-sm text-lumen-cream" id="juror-count">4 Confirmed</span>
+</div>
+<div class="flex items-center -space-x-3 pt-1">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-body-base-bold text-body-base-bold ring-2 ring-charcoal">SC</div>
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-body-base-bold text-body-base-bold ring-2 ring-charcoal">DR</div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-body-base-bold text-body-base-bold ring-2 ring-charcoal">AN</div>
+<div class="w-10 h-10 rounded-full bg-inverse-surface text-inverse-on-surface flex items-center justify-center font-body-base-bold text-body-base-bold ring-2 ring-charcoal">MK</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest/20 text-fog flex items-center justify-center font-label-sm text-label-sm ring-2 ring-charcoal">+8</div>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-highest/15 flex items-start gap-space-sm mt-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px] shrink-0 mt-0.5">verified</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-lumen-cream font-semibold">Smart Deliberation Protocol</span>
+<p class="font-label-sm text-label-sm text-fog mt-0.5">
+                Anonymous score hashes prevent anchoring bias. Review rounds unlock strictly at the 16:30 lock gate.
+              </p>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-3xl bg-surface-container-low flex items-start gap-space-md">
+<img alt="Mango Sentinel Helper Mascot" class="w-14 h-14 rounded-2xl object-cover shrink-0 bg-primary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzr5wm-Efk-P2O59GHEQz-O7UGQ0Uyp26cv3bAx9tJZwgXKrrDgihEEd5e_-O0NZXNIC-qldN_rky_sT4Dswb_hSKFPCXCKlgWH0ckoP32C_q0zTIRX1PmNk1UNMEJVXEk_QfSkmxJ_YwFkDZ-a3hKNk72rDPhedRhTkFRpKEex31-TofWYf6iV7ndUt-QpR9lpPrSd8x_J7Cx02UyWlhDO3od3yrVq2rhDsLAXjrm008Hmo73aUCFiv8mdYtx8EJv1tU"/>
+<div class="flex flex-col justify-center">
+<span class="font-body-base-bold text-body-base-bold text-charcoal">Mango Sentinel Oversight</span>
+<p class="font-label-md text-label-md text-fog mt-0.5 leading-relaxed" id="helper-note-text">
+              All set! As Head Organizer, you will hold final multi-sig confirmation on the prize pool and juror qualification thresholds.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function initInteractiveDossier() {
+      const titleInput = document.getElementById('event-title-input');
+      const taglineInput = document.getElementById('event-tagline-input');
+      const locationInput = document.getElementById('event-location-input');
+      const capacityInput = document.getElementById('event-capacity-input');
+
+      const previewTitle = document.getElementById('preview-event-title');
+      const previewTagline = document.getElementById('preview-event-tagline');
+      const previewLocation = document.getElementById('preview-location');
+      const previewCapacity = document.getElementById('preview-capacity');
+      const previewRoleBadge = document.getElementById('preview-role-badge');
+      const helperNoteText = document.getElementById('helper-note-text');
+
+      if (titleInput && previewTitle) {
+        titleInput.addEventListener('input', (e) => {
+          previewTitle.textContent = e.target.value.trim() || 'Untitled Hackathon';
+        });
+      }
+
+      if (taglineInput && previewTagline) {
+        taglineInput.addEventListener('input', (e) => {
+          previewTagline.textContent = e.target.value.trim() || 'No mission thesis specified yet.';
+        });
+      }
+
+      if (locationInput && previewLocation) {
+        locationInput.addEventListener('input', (e) => {
+          previewLocation.textContent = e.target.value.trim() || 'Unspecified Venue';
+        });
+      }
+
+      if (capacityInput && previewCapacity) {
+        capacityInput.addEventListener('input', (e) => {
+          previewCapacity.textContent = e.target.value.trim() || 'Open Cohort';
+        });
+      }
+
+      const roleButtons = document.querySelectorAll('#role-selector button');
+      roleButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          roleButtons.forEach((other) => {
+            other.classList.remove('bg-primary-container');
+            other.classList.add('bg-surface-container-low');
+            const icon = other.querySelector('.material-symbols-outlined');
+            if (icon) {
+              icon.classList.remove('text-primary');
+              icon.classList.add('text-fog');
+            }
+            const radio = other.querySelector('.role-radio');
+            if (radio) {
+              radio.className = 'role-radio w-5 h-5 rounded-full bg-outline-variant flex items-center justify-center';
+              radio.innerHTML = '';
+            }
+          });
+
+          btn.classList.remove('bg-surface-container-low');
+          btn.classList.add('bg-primary-container');
+          const activeIcon = btn.querySelector('.material-symbols-outlined');
+          if (activeIcon) {
+            activeIcon.classList.remove('text-fog');
+            activeIcon.classList.add('text-primary');
+          }
+          const activeRadio = btn.querySelector('.role-radio');
+          if (activeRadio) {
+            activeRadio.className = 'role-radio w-5 h-5 rounded-full bg-primary flex items-center justify-center';
+            activeRadio.innerHTML = '<span class="w-2 h-2 rounded-full bg-primary-container"></span>';
+          }
+
+          const role = btn.getAttribute('data-role');
+          if (role === 'head') {
+            if (previewRoleBadge) {
+              previewRoleBadge.textContent = 'Organized by Head Lead • Sovereign Root';
+            }
+            if (helperNoteText) {
+              helperNoteText.textContent = 'All set! As Head Organizer, you will hold final multi-sig confirmation on the prize pool and juror qualification thresholds.';
+            }
+          } else {
+            if (previewRoleBadge) {
+              previewRoleBadge.textContent = 'Organized by Operations Lead • Core Delegate';
+            }
+            if (helperNoteText) {
+              helperNoteText.textContent = 'Noted! As Core Team Member, your submissions will queue for Head signatory review prior to public mainnet dispatch.';
+            }
+          }
+        });
+      });
+
+      const addJudgeBtn = document.getElementById('add-judge-btn');
+      const judgesList = document.getElementById('judges-list');
+      const jurorCount = document.getElementById('juror-count');
+
+      if (addJudgeBtn && judgesList && jurorCount) {
+        const pool = [
+          { initials: 'EL', name: 'Elena Li', track: 'Audio Synth • DSP Lead', color: 'bg-secondary' },
+          { initials: 'JT', name: 'James Thorpe', track: 'Edge Compute • Fellow', color: 'bg-primary' },
+          { initials: 'AK', name: 'Anil Kapoor', track: 'Venture Partner • Matrix', color: 'bg-tertiary' }
+        ];
+        let idx = 0;
+
+        addJudgeBtn.addEventListener('click', () => {
+          if (idx >= pool.length) {
+            addJudgeBtn.textContent = 'Roster Filled';
+            addJudgeBtn.disabled = true;
+            return;
+          }
+          const candidate = pool[idx++];
+          const card = document.createElement('div');
+          card.className = 'flex items-center justify-between p-space-sm rounded-2xl bg-lumen-cream animate-fadeIn';
+          card.innerHTML = `
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full ${candidate.color} text-on-primary flex items-center justify-center font-body-base-bold text-body-base-bold">
+                ${candidate.initials}
+              </div>
+              <div class="flex flex-col">
+                <span class="font-body-base-bold text-body-base-bold text-charcoal leading-snug">${candidate.name}</span>
+                <span class="font-label-sm text-label-sm text-fog">${candidate.track}</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-outline-variant hover:text-error cursor-pointer text-[20px] remove-btn">remove_circle_outline</span>
+          `;
+          judgesList.appendChild(card);
+          
+          const currentCount = judgesList.children.length;
+          jurorCount.textContent = currentCount + ' Confirmed';
+
+          const removeBtn = card.querySelector('.remove-btn');
+          if (removeBtn) {
+            removeBtn.addEventListener('click', () => {
+              card.remove();
+              jurorCount.textContent = judgesList.children.length + ' Confirmed';
+              addJudgeBtn.textContent = '+ Add Juror';
+              addJudgeBtn.disabled = false;
+            });
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-charcoal text-lumen-cream py-space-xl mt-space-xl"><div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-margin flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-lumen-cream">Mango</span><span class="font-label-sm text-label-sm text-fog uppercase tracking-widest">Architectural Edition</span></div><p class="font-label-md text-label-md text-fog max-w-sm">Editorial orchestration for technical juries, hackathon leads, and collegiate decathlons.</p></div><div class="flex flex-wrap items-center gap-space-md font-label-md text-label-md text-fog"><a class="hover:text-lumen-cream transition-colors" href="#">Guidelines</a><a class="hover:text-lumen-cream transition-colors" href="#">Rubric Catalog</a><a class="hover:text-lumen-cream transition-colors" href="#">Support Terminal</a><a class="hover:text-lumen-cream transition-colors" href="#">Security &amp; Vault</a><span class="text-outline font-label-sm">© 2025 Mango Systems</span></div></div></footer></body></html>
